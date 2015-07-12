@@ -1,0 +1,22 @@
+{
+  "name": "Polymer_cv",
+  "version": "0.0.0",
+  "authors": [
+    "cBeal <169796@supinfo.com>"
+  ],
+  "description": "Simple CV using Polymer 1.0",
+  "main": "index.html",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#1.0.0",
+    "iron-elements": "polymerelements/iron-elements#~1.0.2",
+    "paper-elements": "polymerelements/paper-elements#~1.0.1"
+  }
+}
