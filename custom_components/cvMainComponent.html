@@ -1,0 +1,119 @@
+<link rel="import" href="../bower_components/polymer/polymer.html">
+<link rel="import" href="../bower_components/paper-tabs/paper-tabs.html">
+<link rel="import" href="../bower_components/iron-flex-layout/classes/iron-flex-layout.html">
+<link rel="import" href="../bower_components/iron-pages/iron-pages.html">
+<link rel="import" href="../bower_components/neon-animation/neon-animated-pages.html">
+<link rel="import" href="../bower_components/neon-animation/neon-animations.html">
+
+<dom-module id="cv-main-component">
+    <style>
+        [main] {
+            @apply(--layout-flex);
+            @apply(--layout-vertical);
+        }
+
+        paper-tab{
+            font-size: 1.2em;
+        }
+
+        paper-header-panel div{
+            background-color: #546E7A;
+            padding-top: 10px;
+            font-family: 'Lato', sans-serif;
+            font-weight: 300;
+            color: white;
+        }
+
+        h1{
+            margin-left: 5%;
+        }
+
+        paper-tab div{
+            display: inline;
+        }
+
+        paper-tabs paper-tab.iron-selected {
+            color: #ffff8d;
+        }
+
+        paper-tabs{
+            width: 50%;
+            margin-left: 25%;
+        }
+    </style>
+
+    <template>
+        <paper-header-panel>
+            <div class="paper-header">
+                <div class="paper-header">
+                    <h1>CV de Corentin BEAL</h1>
+                    <paper-tabs selected="{{selected}}">
+                        <paper-tab>
+                            <div>Accueil</div>
+                        </paper-tab>
+                        <paper-tab>
+                            <div>Projets</div>
+                        </paper-tab>
+                        <paper-tab>
+                            <div>Documents</div>
+                        </paper-tab>
+                    </paper-tabs>
+                </div>
+            </div>
+        </paper-header-panel>
+        <neon-animated-pages class="flex" id="pages" selected="{{selected}}" entry-animation="{{entry}}" exit-animation="{{exit}}">
+            <neon-animatable>
+                <div main>
+                    One
+                </div>
+            </neon-animatable>
+            <neon-animatable>
+                <div main>
+                    Two
+                </div>
+            </neon-animatable>
+            <neon-animatable>
+                <div main>
+                    Three
+                </div>
+            </neon-animatable>
+        </neon-animated-pages>
+
+    </template>
+</dom-module>
+
+<script>
+
+    Polymer({
+        is:"cv-main-component",
+        properties: {
+            selected:{
+                type: Number,
+                value: 0,
+                observer: 'selectChanged'
+            }
+        },
+
+        ready: function(){
+            console.log('It worked');
+        },
+
+        selectChanged: function(newValue, oldValue) {
+            if(newValue == 0){
+                this.entry = 'slide-from-right-animation';
+                this.exit = 'slide-left-animation';
+            }else if(newValue == 2){
+                this.entry = 'slide-from-left-animation';
+                this.exit = 'slide-right-animation';
+            }else if(newValue < oldValue){
+                this.entry = 'slide-from-left-animation';
+                this.exit = 'slide-right-animation';
+                console.log(' << ');
+            }else{
+                this.entry = 'slide-from-right-animation';
+                this.exit = 'slide-left-animation';
+                console.log(' >> ');
+            }
+        }
+    })
+</script>
