@@ -5,7 +5,7 @@
 
 <dom-module id="cv-header-component">
     <style>
-        div{
+        paper-header-panel div{
             background-color: #546E7A;
             padding-top: 10px;
             font-family: 'Lato', sans-serif;
@@ -32,19 +32,26 @@
     </style>
 
     <template>
-        <div class="paper-header">
-            <h1>CV de Corentin BEAL</h1>
-            <paper-tabs selected="{{selected}}">
-                <paper-tab>
-                    <div>Accueil</div>
-                </paper-tab>
-                <paper-tab>
-                    <div>Projets</div>
-                </paper-tab>
-                <paper-tab>
-                    <div>Documents</div>
-                </paper-tab>
-            </paper-tabs>
+        <paper-header-panel>
+            <div class="paper-header">
+                <div class="paper-header">
+                    <h1>CV de Corentin BEAL</h1>
+                    <paper-tabs selected="{{selected}}">
+                        <paper-tab>
+                            <div>Accueil</div>
+                        </paper-tab>
+                        <paper-tab>
+                            <div>Projets</div>
+                        </paper-tab>
+                        <paper-tab>
+                            <div>Documents</div>
+                        </paper-tab>
+                    </paper-tabs>
+                </div>
+            </div>
+        </paper-header-panel>
+        <div class="content">
+            <div>test content</div>
         </div>
     </template>
 </dom-module>
@@ -61,7 +68,6 @@
 
         ready: function(){
             console.log('It worked');
-            this.selected = 0;
         }
     })
 </script>
