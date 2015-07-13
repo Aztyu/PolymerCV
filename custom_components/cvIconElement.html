@@ -1,10 +1,45 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title></title>
-</head>
-<body>
+<link rel="import" href="../bower_components/polymer/polymer.html">
+<link rel="import" href="../bower_components/iron-flex-layout/classes/iron-flex-layout.html">
+<link rel="import" href="../bower_components/paper-material/paper-material.html">
+<link rel="import" href="../bower_components/iron-icon/iron-icon.html">
 
-</body>
-</html>
+<dom-module id="cv-icon-component">
+    <style>
+        iron-icon{
+            --iron-icon-height: 32px;
+            --iron-icon-width: 32px;
+        }
+
+        .image{
+            text-align: center;
+        }
+    </style>
+
+    <template>
+        <div class="image">
+            <iron-icon src="{{computePath(image)}}"></iron-icon>
+            <p>{{text}}</p>
+        </div>
+    </template>
+</dom-module>
+
+<script>
+    Polymer({
+        is: "cv-icon-component",
+
+        properties: {
+            text: String,
+            image: String
+        },
+
+        ready: function(){
+            console.log("Cards worked");
+        },
+
+        computePath: function(image){
+            var path = 'images/' + image + '.png';
+            console.log(path);
+            return path;
+        }
+    })
+</script>
