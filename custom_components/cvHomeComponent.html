@@ -1,0 +1,98 @@
+<link rel="import" href="../bower_components/polymer/polymer.html">
+<link rel="import" href="../bower_components/iron-flex-layout/classes/iron-flex-layout.html">
+<link rel="import" href="../bower_components/paper-material">
+
+<dom-module id="cv-home-component">
+    <style>
+        [card] {
+        @apply(--layout-vertical);
+        @apply(--shadow-elevation-2dp);
+
+            height: 300px;
+            max-width: 800px;
+            margin: 16px auto;
+            font-weight: bold;
+            background-color: white;
+            height: auto;
+        }
+
+        .title{
+        @apply(--shadow-elevation-4dp);
+
+            color: white;
+            background-color: #2196F3;
+        }
+
+        .title, .content{
+            padding: 10px;
+        }
+
+        p{
+            color: #1565C0;
+        }
+
+    </style>
+
+    <template>
+        <div card>
+            <div class="title">
+                Situation actuelle
+            </div>
+            <div class="content">
+                <p>Actuellement étudiant en informatique à SUPINFO Lyon en 2ème année.</p>
+                <p>En recherche d’un stage à temps partiel 2 jours par semaine (jeudi et vendredi) pour ma 3ème année à SUPINFO de Novembre 2015 à juin 2016).</p>
+                <p>Je reste disponible par mail pour toutes questions.</p>
+            </div>
+        </div>
+        <div card>
+            <div class="title">
+                Compétences
+            </div>
+            <div class="content">
+                <p class="category">Développement</p>
+                <div class="icons">
+
+                </div>
+                <p class="category">Web</p>
+                <div class="icons">
+
+                </div>
+                <p class="category">Réseau</p>
+                <div class="icons">
+
+                </div>
+                <p class="category">Langues</p>
+                <div class="icons">
+
+                </div>
+                <p class="category">Outils</p>
+            </div>
+        </div>
+        <div card>
+            <div class="title">
+                Formation
+            </div>
+            <div class="content">
+                Content
+            </div>
+        </div>
+        <div card>
+            <div class="title">
+                Expériences
+            </div>
+            <div class="content">
+                Content
+            </div>
+        </div>
+    </template>
+</dom-module>
+
+<script>
+    Polymer({
+        is: "cv-home-component",
+
+        ready: function(){
+            console.log("Cards worked");
+        }
+    })
+</script>
