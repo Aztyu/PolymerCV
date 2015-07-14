@@ -11,15 +11,25 @@
 
             height: 300px;
             max-width: 800px;
+            min-width: 400px;
+            width: 60%;
             margin: 16px auto;
             font-weight: bold;
             background-color: white;
             height: auto;
         }
 
+        cv-icon-component{
+
+        /*@apply(--shadow-elevation-4dp);*/
+        }
+
+        .icons{
+        @apply(--layout-vertical);
+        }
+
         .title{
         @apply(--shadow-elevation-4dp);
-
             color: white;
             background-color: #2196F3;
         }
@@ -30,6 +40,15 @@
 
         p{
             color: #1565C0;
+        }
+
+        #haut{
+            z-index: 10;
+
+        }
+
+        #thaut{
+            z-index:20;
         }
 
     </style>
@@ -52,11 +71,18 @@
             <div class="content">
                 <p class="category">Développement</p>
                 <div class="icons">
-                    <cv-icon-component text="Github" image="github"></cv-icon-component>
+                    <cv-icon-component text="C/C++" image="cpp_circle"></cv-icon-component>
+                    <cv-icon-component id="haut" text="Java" image="java_circle"></cv-icon-component>
+                    <cv-icon-component id="thaut" text="C#" image="csharp_circle"></cv-icon-component>
                 </div>
                 <p class="category">Web</p>
                 <div class="icons">
-
+                    <cv-icon-component text="HTML 5" image="html5_circle"></cv-icon-component>
+                    <cv-icon-component text="CSS 3" image="css_circle"></cv-icon-component>
+                    <cv-icon-component text="JavaScript" image="js_circle"></cv-icon-component>
+                    <cv-icon-component text="JQuery" image="jquery_circle"></cv-icon-component>
+                    <cv-icon-component text="PHP" image="php_circle"></cv-icon-component>
+                    <cv-icon-component text="Symfony 2" image="sf_circle"></cv-icon-component>
                 </div>
                 <p class="category">Réseau</p>
                 <div class="icons">

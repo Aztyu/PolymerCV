@@ -6,20 +6,30 @@
 <dom-module id="cv-icon-component">
     <style>
         iron-icon{
-            --iron-icon-height: 32px;
-            --iron-icon-width: 32px;
+            --iron-icon-height: 48px;
+            --iron-icon-width: 48px;
+            margin-right: 16px;
         }
 
-        .image{
-            text-align: center;
+        paper-material{
+            /*text-align: center;*/
+            padding-top: 8px;
+            padding-bottom: 8px;
+            padding-left: 16px;
+        }
+
+        p{
+            display:inline;
         }
     </style>
 
     <template>
-        <div class="image">
-            <iron-icon src="{{computePath(image)}}"></iron-icon>
-            <p>{{text}}</p>
-        </div>
+        <paper-material elevation="2">
+            <div class="image">
+                <iron-icon src="{{computePath(image)}}"></iron-icon>
+                <p>{{text}}</p>
+            </div>
+        </paper-material>
     </template>
 </dom-module>
 
