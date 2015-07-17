@@ -8,10 +8,13 @@
         iron-icon{
             --iron-icon-height: 48px;
             --iron-icon-width: 48px;
+            min-height: 48px;
+            min-width: 48px;
             margin-right: 16px;
         }
 
-        paper-material{
+        .image{
+        @apply(--layout-horizontal);
             /*text-align: center;*/
             padding-top: 8px;
             padding-bottom: 8px;
@@ -24,12 +27,10 @@
     </style>
 
     <template>
-        <paper-material elevation="2">
-            <div class="image">
-                <iron-icon src="{{computePath(image)}}"></iron-icon>
-                <p>{{text}}</p>
-            </div>
-        </paper-material>
+        <div class="image">
+            <iron-icon src="{{computePath(image)}}"></iron-icon>
+            <p>{{text}}</p>
+        </div>
     </template>
 </dom-module>
 
