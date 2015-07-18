@@ -11,6 +11,9 @@
         }
         .wrapper{
         @apply(--layout-horizontal);
+        @apply(--shadow-elevation-2dp);
+            padding: 4px 4px 4px 4px;
+            margin-top: 16px;
         }
 
         .info{
@@ -18,12 +21,13 @@
         @apply(--layout-flex);
         }
 
-        .date{
+        #date{
         @apply(--shadow-elevation-4dp);
-            background-color: #2196F3;
+            //background-color: #2196F3;
             color: white;
             border: 3px;
             padding: 5px 10px 5px 10px;
+            margin-left: auto;
         }
 
         .title{
@@ -35,10 +39,6 @@
             margin: 0px 16px 0px 16px;
         }
 
-        .date{
-            margin-left: auto;
-
-        }
     </style>
 
     <template>
@@ -47,7 +47,7 @@
             <div class="info">
                 <div class="title">
                     <p class="diplome">{{cursus}}</p>
-                    <p class="date">{{date}}</p>
+                    <p id="date">{{date}}</p>
                 </div>
                 <p class="desc">{{description}}</p>
             </div>
@@ -61,7 +61,6 @@
 
         properties: {
             image: String,
-            school: String,
             cursus: String,
             date: String,
             description: String
@@ -69,6 +68,11 @@
 
         ready: function(){
             console.log("Cards worked");
+            if(this.date == "En cours"){
+                this.$$("#date").style.backgroundColor = "#43A047";
+            }else{
+                this.$$("#date").style.backgroundColor = "#2196F3";
+            }
         },
 
         computePath: function(image){
