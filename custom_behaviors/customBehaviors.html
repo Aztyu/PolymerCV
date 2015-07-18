@@ -1,0 +1,14 @@
+<script>
+    var customBehaviors = customBehaviors || {};
+    customBehaviors.ImageBehavior = {
+        properties: {
+            image: String
+        },
+
+        computePath: function(image){
+            var path = 'images/' + image + '.png';
+            console.log(path);
+            return path;
+        }
+    }
+</script>

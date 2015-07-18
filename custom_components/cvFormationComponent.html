@@ -2,6 +2,7 @@
 <link rel="import" href="../bower_components/iron-flex-layout/classes/iron-flex-layout.html">
 <link rel="import" href="../bower_components/paper-material/paper-material.html">
 <link rel="import" href="../bower_components/iron-icon/iron-icon.html">
+<link rel="import" href="../custom_behaviors/customBehaviors.html">
 
 <dom-module id="cv-formation-component">
     <style>
@@ -59,26 +60,20 @@
     Polymer({
         is: "cv-formation-component",
 
+        behaviors: [customBehaviors.ImageBehavior],
+
         properties: {
-            image: String,
             cursus: String,
             date: String,
             description: String
         },
 
         ready: function(){
-            console.log("Cards worked");
             if(this.date == "En cours"){
                 this.$$("#date").style.backgroundColor = "#43A047";
             }else{
                 this.$$("#date").style.backgroundColor = "#2196F3";
             }
-        },
-
-        computePath: function(image){
-            var path = 'images/' + image + '.png';
-            console.log(path);
-            return path;
         }
     })
 </script>
