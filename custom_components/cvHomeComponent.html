@@ -2,6 +2,7 @@
 <link rel="import" href="../bower_components/iron-flex-layout/classes/iron-flex-layout.html">
 <link rel="import" href="../bower_components/paper-material/paper-material.html">
 <link rel="import" href="cvIconElement.html">
+<link rel="import" href="cvFormationComponent.html">
 
 <dom-module id="cv-home-component">
     <style>
@@ -20,12 +21,12 @@
         }
 
         cv-icon-component{
-
         /*@apply(--shadow-elevation-4dp);*/
         }
 
         .icons{
         @apply(--layout-vertical);
+            @apply(--shadow-elevation-4dp);
         }
 
         .title{
@@ -67,7 +68,7 @@
                 <p class="category">Développement</p>
                 <div class="icons">
                     <cv-icon-component text="Langage C/C++, bibliothèque SDL et Irrlicht" image="cpp_circle"></cv-icon-component>
-                    <cv-icon-component text="Java et bibliothèque Swing" image="java_circle"></cv-icon-component>
+                    <cv-icon-component text="Java, bibliothèque Swing et développement Android" image="java_circle"></cv-icon-component>
                     <cv-icon-component text="C#, WPF et Entity Framework" image="csharp_circle"></cv-icon-component>
                 </div>
                 <p class="category">Web</p>
@@ -91,8 +92,11 @@
                     <cv-icon-component text="Allemand lu, écrit, parlé" image="german_circle"></cv-icon-component>
                 </div>
                 <p class="category">Outils</p>
-                    <cv-icon-component text="Anglais lu, écrit, parlé (niveau B1 certifié CAMBRIDGE)" image="english_circle"></cv-icon-component>
-                    <cv-icon-component text="Allemand lu, écrit, parlé" image="german_circle"></cv-icon-component>
+                <div class="icons">
+                    <cv-icon-component text="Experimenté sur l'IDE Netbeans pour le C++ ou le Java" image="netbeans_circle"></cv-icon-component>
+                    <cv-icon-component text="Experimenté sur la suite Jetbrains (WebStorm, PyCharm, ...)" image="jetbrains_circle"></cv-icon-component>
+                    <cv-icon-component text="Outil de versionnement Git ou Mercurial" image="git_circle"></cv-icon-component>
+                </div>
             </div>
         </div>
         <div card>
@@ -100,12 +104,21 @@
                 Formation
             </div>
             <div class="content">
-                Content
+                <cv-formation-component image="supinfo" cursus="Licence Informatique" school="SUPINFO" date="En cours"></cv-formation-component>
+                <cv-formation-component image="escy" cursus="Baccalauréat S-SVT" school="ESCY" date="2013"></cv-formation-component>
             </div>
         </div>
         <div card>
             <div class="title">
                 Expériences
+            </div>
+            <div class="content">
+                Content
+            </div>
+        </div>
+        <div card>
+            <div class="title">
+                Mes centres d’intérêts
             </div>
             <div class="content">
                 Content

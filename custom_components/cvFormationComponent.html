@@ -1,0 +1,80 @@
+<link rel="import" href="../bower_components/polymer/polymer.html">
+<link rel="import" href="../bower_components/iron-flex-layout/classes/iron-flex-layout.html">
+<link rel="import" href="../bower_components/paper-material/paper-material.html">
+<link rel="import" href="../bower_components/iron-icon/iron-icon.html">
+
+<dom-module id="cv-formation-component">
+    <style>
+        iron-icon{
+            --iron-icon-height: 108px;
+            --iron-icon-width: 196px;
+        }
+        .wrapper{
+        @apply(--layout-horizontal);
+        }
+
+        .info{
+        @apply(--layout-vertical);
+        @apply(--layout-flex);
+        }
+
+        .date{
+        @apply(--shadow-elevation-4dp);
+            background-color: #2196F3;
+            color: white;
+            border: 3px;
+            padding: 5px 10px 5px 10px;
+        }
+
+        .title{
+        @apply(--layout-horizontal);
+        @apply(--layout-center);
+        }
+
+        .diplome{
+            margin: 0px 16px 0px 16px;
+        }
+
+        .date{
+            margin-left: auto;
+
+        }
+    </style>
+
+    <template>
+        <div class="wrapper">
+            <iron-icon src="{{computePath(image)}}"></iron-icon>
+            <div class="info">
+                <div class="title">
+                    <p class="diplome">{{cursus}}</p>
+                    <p class="date">{{date}}</p>
+                </div>
+                <p class="desc">{{description}}</p>
+            </div>
+        </div>
+    </template>
+</dom-module>
+
+<script>
+    Polymer({
+        is: "cv-formation-component",
+
+        properties: {
+            image: String,
+            school: String,
+            cursus: String,
+            date: String,
+            description: String
+        },
+
+        ready: function(){
+            console.log("Cards worked");
+        },
+
+        computePath: function(image){
+            var path = 'images/' + image + '.png';
+            console.log(path);
+            return path;
+        }
+    })
+</script>
