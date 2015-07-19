@@ -57,9 +57,6 @@
         p{
             margin: 4px 4px 4px 4px;
         }
-
-
-
     </style>
 
     <template>
@@ -74,8 +71,12 @@
                     </div>
                 </div>
             </div>
-            <p class="desc">{{description}}</p>
-            <google-map latitude="45.3314691" longitude="4.3113186" zoom={{zoom}}></google-map>
+            <div class="desc">
+                <template is="dom-repeat" items="{{description}}" as="phrase">
+                    <p>{{phrase}}</p>
+                </template>
+            </div>
+            <google-map latitude={{latitude}} longitude={{longitude}} zoom={{zoom}}></google-map>
         </div>
     </template>
 </dom-module>
@@ -87,10 +88,12 @@
         behaviors: [customBehaviors.ImageBehavior],
 
         properties:{
+            latitude: Number,
+            longitude: Number,
             company: String,
             position: String,
             date: String,
-            description: String,
+            description: Array,
             zoom:{
                 type: String,
                 value: 16
