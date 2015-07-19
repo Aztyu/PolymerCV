@@ -2,22 +2,80 @@
 <link rel="import" href="../bower_components/iron-flex-layout/classes/iron-flex-layout.html">
 <link rel="import" href="../bower_components/paper-material/paper-material.html">
 <link rel="import" href="../bower_components/iron-icon/iron-icon.html">
+<link rel="import" href="../bower_components/google-map/google-map.html">
 <link rel="import" href="../custom_behaviors/customBehaviors.html">
 
 <dom-module id="cv-experience-component">
     <style>
+        google-map{
+            height: 200px;
+        }
+
+        google-map:hover{
+            height: 500px;
+        }
+
+        iron-icon{
+            --iron-icon-height: 48px;
+            --iron-icon-width: 48px;
+            min-height: 48px;
+            min-width: 48px;
+        }
+
+        .wrapper{
+        @apply(--layout-vertical);
+        @apply(--shadow-elevation-2dp);
+            padding: 4px 0px 4px 4px;
+            margin-top: 16px;
+        }
+
+        .content{
+        @apply(--layout-horizontal);
+            padding: 8px 0px 8px 8px;
+        }
+
+        .header{
+        @apply(--layout-horizontal);
+        @apply(--layout-center);
+        }
+
+        .details{
+        @apply(--layout-flex);
+        @apply(--layout-center);
+            padding-left: 16px;
+        }
+
+        #date{
+        @apply(--shadow-elevation-2dp);
+            margin-left: auto;
+            color: white;
+            border: 3px;
+            padding: 5px 10px 5px 10px;
+            background-color: #2196F3;
+        }
+
+        p{
+            margin: 4px 4px 4px 4px;
+        }
+
+
+
     </style>
 
     <template>
         <div class="wrapper">
-            <iron-icon src="{{computePath(image)}}"></iron-icon>
-            <div class="info">
-                <div class="title">
-                    <p class="diplome">{{cursus}}</p>
-                    <p id="date">{{date}}</p>
+            <div class="content">
+                <iron-icon src="{{computePath(image)}}"></iron-icon>
+                <div class="details">
+                    <p class="company">{{company}}</p>
+                    <div class="header">
+                        <p id="position">{{position}}</p>
+                        <p id="date">{{date}}</p>
+                    </div>
                 </div>
-                <p class="desc">{{description}}</p>
             </div>
+            <p class="desc">{{description}}</p>
+            <google-map latitude="45.3314691" longitude="4.3113186" zoom={{zoom}}></google-map>
         </div>
     </template>
 </dom-module>
@@ -26,7 +84,18 @@
     Polymer({
         is: "cv-experience-component",
 
-        behavior: [customBehaviors.ImageBehavior],
+        behaviors: [customBehaviors.ImageBehavior],
+
+        properties:{
+            company: String,
+            position: String,
+            date: String,
+            description: String,
+            zoom:{
+                type: String,
+                value: 16
+            }
+        },
 
         ready: function(){
         }
