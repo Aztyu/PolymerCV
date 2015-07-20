@@ -10,16 +10,21 @@
             --iron-icon-height: 108px;
             --iron-icon-width: 196px;
         }
+
         .wrapper{
-        @apply(--layout-horizontal);
         @apply(--shadow-elevation-2dp);
             padding: 4px 4px 4px 4px;
             margin-top: 16px;
         }
 
+        .content{
+        @apply(--layout-horizontal);
+        }
+
         .info{
         @apply(--layout-vertical);
         @apply(--layout-flex);
+
         }
 
         #date{
@@ -32,6 +37,8 @@
 
         .title{
         @apply(--layout-horizontal);
+            @apply(--layout-center);
+        @apply(--layout-flex);
         @apply(--layout-center);
         }
 
@@ -39,22 +46,31 @@
             margin: 0px 16px 0px 16px;
         }
 
+        .desc{
+            padding: 8px 16px 8px 16px ;
+        }
+
+        p{
+            margin: 4px 4px 4px 4px;
+        }
+
     </style>
 
     <template>
         <div class="wrapper">
-            <iron-icon src="{{computePath(image)}}"></iron-icon>
-            <div class="info">
-                <div class="title">
-                    <p class="diplome">{{cursus}}</p>
-                    <p id="date">{{date}}</p>
+            <div class="content">
+                <iron-icon src="{{computePath(image)}}"></iron-icon>
+                <div class="info">
+                    <div class="title">
+                        <p class="diplome">{{cursus}}</p>
+                        <p id="date">{{date}}</p>
+                    </div>
                 </div>
-                <div class="desc">
-                    <template is="dom-repeat" items="{{description}}" as="phrase">
-                        <p>{{phrase}}</p>
-                    </template>
-                </div>
-
+            </div>
+            <div class="desc">
+                <template is="dom-repeat" items="{{description}}" as="phrase">
+                    <p>{{phrase}}</p>
+                </template>
             </div>
         </div>
     </template>

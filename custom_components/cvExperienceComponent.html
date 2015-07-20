@@ -11,15 +11,11 @@
             height: 200px;
         }
 
-        google-map:hover{
-            height: 500px;
-        }
-
         iron-icon{
-            --iron-icon-height: 48px;
-            --iron-icon-width: 48px;
-            min-height: 48px;
-            min-width: 48px;
+            --iron-icon-height: 92px;
+            --iron-icon-width: 92px;
+            min-height: 92px;
+            min-width: 92px;
         }
 
         .wrapper{
@@ -54,6 +50,10 @@
             background-color: #2196F3;
         }
 
+        .desc{
+            padding: 8px 16px 8px 16px ;
+        }
+
         p{
             margin: 4px 4px 4px 4px;
         }
@@ -76,7 +76,9 @@
                     <p>{{phrase}}</p>
                 </template>
             </div>
-            <google-map latitude={{latitude}} longitude={{longitude}} zoom={{zoom}}></google-map>
+            <google-map latitude={{latitude}} longitude={{longitude}} zoom={{zoom}}>
+                <google-map-marker latitude={{latitude}} longitude={{longitude}}></google-map-marker>
+            </google-map>
         </div>
     </template>
 </dom-module>
