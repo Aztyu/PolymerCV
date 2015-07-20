@@ -2,26 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c1c2911d-622b-4f9a-849b-c027cc05485b" name="Default" comment="Move page content into cv-header">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/analytics_fab.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/cisco_fab.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/cpp_fab.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/csharp_fab.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/css_fab.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/git_fab.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/github-fab.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/html5_fab.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/java_fab.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/jb_fab.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/jquery_fab.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/js_fab.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/linux_fab.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/netbeans_fab.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/oriol.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/php_fab.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/sf_fab.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/custom_components/cvExperienceComponent.html" afterPath="$PROJECT_DIR$/custom_components/cvExperienceComponent.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/custom_components/cvFormationComponent.html" afterPath="$PROJECT_DIR$/custom_components/cvFormationComponent.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/custom_components/cvHomeComponent.html" afterPath="$PROJECT_DIR$/custom_components/cvHomeComponent.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/custom_components/cvIconElement.html" afterPath="$PROJECT_DIR$/custom_components/cvIconElement.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Polymer_cv.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -65,18 +48,18 @@
       <file leaf-file-name="cvMainComponent.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/custom_components/cvMainComponent.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
+            <state vertical-scroll-proportion="-16.076923">
               <caret line="98" column="26" selection-start-line="98" selection-start-column="26" selection-end-line="98" selection-end-column="26" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="cvExperienceComponent.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="cvExperienceComponent.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/custom_components/cvExperienceComponent.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-12.363636">
-              <caret line="76" column="27" selection-start-line="76" selection-start-column="27" selection-end-line="76" selection-end-column="27" />
+            <state vertical-scroll-proportion="0.3207547">
+              <caret line="64" column="46" selection-start-line="64" selection-start-column="46" selection-end-line="64" selection-end-column="46" />
               <folding />
             </state>
           </provider>
@@ -105,8 +88,8 @@
       <file leaf-file-name="cvHomeComponent.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/custom_components/cvHomeComponent.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-12.730769">
-              <caret line="28" column="8" selection-start-line="28" selection-start-column="8" selection-end-line="28" selection-end-column="39" />
+            <state vertical-scroll-proportion="-19.26923">
+              <caret line="113" column="75" selection-start-line="113" selection-start-column="75" selection-end-line="113" selection-end-column="75" />
               <folding />
             </state>
           </provider>
@@ -122,11 +105,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="cvIconElement.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="cvIconElement.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/custom_components/cvIconElement.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.2713797">
-              <caret line="14" column="42" selection-start-line="14" selection-start-column="42" selection-end-line="14" selection-end-column="42" />
+            <state vertical-scroll-proportion="-17.384615">
+              <caret line="32" column="27" selection-start-line="32" selection-start-column="27" selection-end-line="32" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -135,8 +118,8 @@
       <file leaf-file-name="cvFormationComponent.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/custom_components/cvFormationComponent.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.8461537">
-              <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+            <state vertical-scroll-proportion="-3.6538463">
+              <caret line="61" column="46" selection-start-line="61" selection-start-column="46" selection-end-line="61" selection-end-column="46" />
               <folding />
             </state>
           </provider>
@@ -166,10 +149,10 @@
         <option value="$PROJECT_DIR$/custom_behaviors/customBehaviors.html" />
         <option value="$PROJECT_DIR$/custom_components/cvMainComponent.html" />
         <option value="$PROJECT_DIR$/bower.json" />
+        <option value="$PROJECT_DIR$/custom_components/cvIconElement.html" />
+        <option value="$PROJECT_DIR$/custom_components/cvHomeComponent.html" />
         <option value="$PROJECT_DIR$/custom_components/cvFormationComponent.html" />
         <option value="$PROJECT_DIR$/custom_components/cvExperienceComponent.html" />
-        <option value="$PROJECT_DIR$/custom_components/cvHomeComponent.html" />
-        <option value="$PROJECT_DIR$/custom_components/cvIconElement.html" />
       </list>
     </option>
   </component>
@@ -181,7 +164,6 @@
     <order />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="960" />
     <option name="width" value="960" />
     <option name="height" value="1040" />
   </component>
@@ -338,7 +320,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="960" y="0" width="960" height="1040" extended-state="0" />
+    <frame x="0" y="0" width="960" height="1040" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21716101" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -683,14 +665,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/custom_components/cvMainComponent.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="98" column="26" selection-start-line="98" selection-start-column="26" selection-end-line="98" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/custom_behaviors/customBehaviors.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -731,34 +705,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/custom_components/cvExperienceComponent.html">
+    <entry file="file://$PROJECT_DIR$/custom_components/cvIconElement.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.363636">
-          <caret line="76" column="27" selection-start-line="76" selection-start-column="27" selection-end-line="76" selection-end-column="27" />
+        <state vertical-scroll-proportion="-17.384615">
+          <caret line="32" column="27" selection-start-line="32" selection-start-column="27" selection-end-line="32" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/custom_components/cvMainComponent.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-16.076923">
+          <caret line="98" column="26" selection-start-line="98" selection-start-column="26" selection-end-line="98" selection-end-column="26" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/custom_components/cvHomeComponent.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.730769">
-          <caret line="28" column="8" selection-start-line="28" selection-start-column="8" selection-end-line="28" selection-end-column="39" />
+        <state vertical-scroll-proportion="-19.26923">
+          <caret line="113" column="75" selection-start-line="113" selection-start-column="75" selection-end-line="113" selection-end-column="75" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/custom_components/cvFormationComponent.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.8461537">
-          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+        <state vertical-scroll-proportion="-3.6538463">
+          <caret line="61" column="46" selection-start-line="61" selection-start-column="46" selection-end-line="61" selection-end-column="46" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/custom_components/cvIconElement.html">
+    <entry file="file://$PROJECT_DIR$/custom_components/cvExperienceComponent.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2713797">
-          <caret line="14" column="42" selection-start-line="14" selection-start-column="42" selection-end-line="14" selection-end-column="42" />
+        <state vertical-scroll-proportion="0.3207547">
+          <caret line="64" column="46" selection-start-line="64" selection-start-column="46" selection-end-line="64" selection-end-column="46" />
           <folding />
         </state>
       </provider>

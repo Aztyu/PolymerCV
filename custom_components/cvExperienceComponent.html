@@ -62,7 +62,9 @@
     <template>
         <div class="wrapper">
             <div class="content">
-                <iron-icon src="{{computePath(image)}}"></iron-icon>
+                <a href={{src}} target="_blank">
+                    <iron-icon src="{{computePath(image)}}"></iron-icon>
+                </a>
                 <div class="details">
                     <p class="company">{{company}}</p>
                     <div class="header">
@@ -95,6 +97,7 @@
             company: String,
             position: String,
             date: String,
+            src: String,
             description: Array,
             zoom:{
                 type: String,

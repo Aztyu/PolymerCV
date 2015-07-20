@@ -59,7 +59,9 @@
     <template>
         <div class="wrapper">
             <div class="content">
-                <iron-icon src="{{computePath(image)}}"></iron-icon>
+                <a href={{src}} target="_blank">
+                    <iron-icon src="{{computePath(image)}}"></iron-icon>
+                </a>
                 <div class="info">
                     <div class="title">
                         <p class="diplome">{{cursus}}</p>
@@ -85,6 +87,7 @@
         properties: {
             cursus: String,
             date: String,
+            src: String,
             description: Array
         },
 
