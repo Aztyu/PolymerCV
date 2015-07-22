@@ -1,0 +1,37 @@
+<link rel="import" href="../bower_components/polymer/polymer.html">
+<link rel="import" href="../bower_components/iron-flex-layout/classes/iron-flex-layout.html">
+<link rel="import" href="../bower_components/iron-icon/iron-icon.html">
+<link rel="import" href="../custom_behaviors/customBehaviors.html">
+
+<dom-module id="quick-presentation-component">
+    <style>
+    </style>
+
+    <template>
+        <div class="aside">
+            <div id="CB">
+                <img src="images/Photo.jpg" alt="Photo de BEAL Corentin" />
+            </div>
+                <p>BEAL Corentin</p>
+                <p>40 Avenue Général Frère</p>
+                <p>69008 LYON</p>
+                <p>06.88.01.35.92</p>
+                <p>Permis B</p>
+            <div>
+                <a href="https://github.com/search?q=beal+corentin&ref=cmdform&type=Users" target="_blank"><img id="github" src="images/github.png" alt="github BEAL Corentin"></a>
+            </div>
+        </div>
+    </template>
+</dom-module>
+
+<script>
+    Polymer({
+        is: "quick-presentation-component",
+
+        behaviors: [customBehaviors.ImageBehavior],
+
+        properties: {
+            description: Array
+        }
+    })
+</script>

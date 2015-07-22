@@ -1,0 +1,32 @@
+<link rel="import" href="../bower_components/polymer/polymer.html">
+<link rel="import" href="../bower_components/iron-flex-layout/classes/iron-flex-layout.html">
+<link rel="import" href="../bower_components/iron-icon/iron-icon.html">
+<link rel="import" href="../custom_behaviors/customBehaviors.html">
+
+<dom-module id="cv-hobbies-component">
+    <style>
+    </style>
+
+    <template>
+        <div class="wrapper">
+            <iron-icon src={{computePath(image)}}></iron-icon>
+            <div class="desc">
+                <template is="dom-repeat" items="{{description}}" as="phrase">
+                    <p>{{phrase}}</p>
+                </template>
+            </div>
+        </div>
+    </template>
+</dom-module>
+
+<script>
+    Polymer({
+        is: "cv-hobbies-component",
+
+        behaviors: [customBehaviors.ImageBehavior],
+
+        properties: {
+            description: Array
+        }
+    })
+</script>
