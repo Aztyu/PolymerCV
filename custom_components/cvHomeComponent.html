@@ -5,6 +5,7 @@
 <link rel="import" href="cvFormationComponent.html">
 <link rel="import" href="cvExperienceComponent.html">
 <link rel="import" href="cvHobbiesComponent.html">
+<link rel="import" href="quickPresentationComponent.html">
 
 <dom-module id="cv-home-component">
     <style>
@@ -48,6 +49,14 @@
     </style>
 
     <template>
+        <div card>
+            <div class="title">
+                Présentation
+            </div>
+            <div class="content">
+                <quick-presentation-component></quick-presentation-component>
+            </div>
+        </div>
         <div card>
             <div class="title">
                 Situation actuelle
@@ -121,10 +130,10 @@
                 Mes centres d’intérêts
             </div>
             <div class="content">
-                <cv-hobbies-component></cv-hobbies-component>
-                <cv-hobbies-component></cv-hobbies-component>
-                <cv-hobbies-component></cv-hobbies-component>
-                <cv-hobbies-component></cv-hobbies-component>
+                <cv-hobbies-component description='["test desc"]' image="mutest"></cv-hobbies-component>
+                <cv-hobbies-component description='["test desc"]' image="mutest"></cv-hobbies-component>
+                <cv-hobbies-component description='["test desc"]' image="mutest"></cv-hobbies-component>
+                <cv-hobbies-component description='["test desc"]' image="mutest"></cv-hobbies-component>
             </div>
         </div>
     </template>

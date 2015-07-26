@@ -1,25 +1,78 @@
 <link rel="import" href="../bower_components/polymer/polymer.html">
 <link rel="import" href="../bower_components/iron-flex-layout/classes/iron-flex-layout.html">
 <link rel="import" href="../bower_components/iron-icon/iron-icon.html">
+<link rel="import" href="../bower_components/iron-icons/iron-icons.html">
+<link rel="import" href="../bower_components/iron-icons/maps-icons.html">
+<link rel="import" href="../bower_components/paper-fab/paper-fab.html"/>
 <link rel="import" href="../custom_behaviors/customBehaviors.html">
 
 <dom-module id="quick-presentation-component">
     <style>
+        paper-fab{
+        @apply(--shadow-elevation-4dp);
+            min-height: 48px;
+            min-width: 48px;
+            margin: auto;
+            --paper-fab-background: black;
+        }
+        .icon{
+        @apply(--layout-horizontal);
+        }
+
+        iron-icon{
+            color: #2196F3;
+        @apply(--layout-self-center);
+        }
+
+        .links{
+        @apply(--layout-horizontal);
+            margin: auto;
+            width: 196px;
+        }
+
+        #no-icon{
+            margin-left: 32px;
+        }
+
+        a{
+            margin: 4px 8px 4px 8px;
+        }
+
+        p{
+            margin: 8px 0 8px 8px;
+        }
+
     </style>
 
     <template>
-        <div class="aside">
-            <div id="CB">
-                <img src="images/Photo.jpg" alt="Photo de BEAL Corentin" />
-            </div>
-                <p>BEAL Corentin</p>
-                <p>40 Avenue Général Frère</p>
-                <p>69008 LYON</p>
-                <p>06.88.01.35.92</p>
-                <p>Permis B</p>
-            <div>
-                <a href="https://github.com/search?q=beal+corentin&ref=cmdform&type=Users" target="_blank"><img id="github" src="images/github.png" alt="github BEAL Corentin"></a>
-            </div>
+        <iron-icon src={{computePath(image)}} alt="Photo de BEAL Corentin"></iron-icon>
+        <div class="icon">
+            <iron-icon icon="perm-identity" ></iron-icon>
+            <p>BEAL Corentin</p>
+        </div>
+        <div class="icon">
+            <iron-icon icon="home" ></iron-icon>
+            <p>40 Avenue Général Frère</p>
+        </div>
+        <p id="no-icon">69008 LYON</p>
+        <div class="icon">
+            <iron-icon icon="maps:local-phone" ></iron-icon>
+            <p>06.88.01.35.92</p>
+        </div>
+        <div class="icon">
+            <iron-icon icon="maps:directions-car"></iron-icon>
+            <p>Permis B</p>
+        </div>
+        <div class="links">
+            <a href="https://github.com/Aztyu">
+                <paper-fab src={{computePath("github")}} mini="true"></paper-fab>
+            </a>
+            <a href="https://www.linkedin.com/profile/view?id=426748824&trk=nav_responsive_tab_profile">
+                <paper-fab src={{computePath("linkedin")}} mini="true"></paper-fab>
+            </a>
+            <a href="mailto:Corentin.BEAL@supinfo.com">
+                <paper-fab icon="mail" mini="true"></paper-fab>
+            </a>
         </div>
     </template>
 </dom-module>
