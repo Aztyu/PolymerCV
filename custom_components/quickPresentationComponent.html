@@ -19,6 +19,16 @@
         @apply(--layout-horizontal);
         }
 
+        .picture{
+        @apply(--shadow-elevation-8dp);
+            min-height: 143px;
+            min-width: 114px;
+            width: 114px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
         iron-icon{
             color: #2196F3;
         @apply(--layout-self-center);
@@ -45,7 +55,7 @@
     </style>
 
     <template>
-        <iron-icon src={{computePath(image)}} alt="Photo de BEAL Corentin"></iron-icon>
+        <iron-icon class="picture" src={{computePath("corentin")}} alt="Photo de BEAL Corentin"></iron-icon>
         <div class="icon">
             <iron-icon icon="perm-identity" ></iron-icon>
             <p>BEAL Corentin</p>
@@ -64,10 +74,10 @@
             <p>Permis B</p>
         </div>
         <div class="links">
-            <a href="https://github.com/Aztyu">
+            <a href="https://github.com/Aztyu" target="_blank">
                 <paper-fab src={{computePath("github")}} mini="true"></paper-fab>
             </a>
-            <a href="https://www.linkedin.com/profile/view?id=426748824&trk=nav_responsive_tab_profile">
+            <a href="https://www.linkedin.com/profile/view?id=426748824&trk=nav_responsive_tab_profile" target="_blank">
                 <paper-fab src={{computePath("linkedin")}} mini="true"></paper-fab>
             </a>
             <a href="mailto:Corentin.BEAL@supinfo.com">

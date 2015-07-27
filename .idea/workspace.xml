@@ -2,31 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c1c2911d-622b-4f9a-849b-c027cc05485b" name="Default" comment="Move page content into cv-header">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/linkedin.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/mutest.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/custom_components/cvProjectsComponent.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/analytics_fab.png" afterPath="$PROJECT_DIR$/images/analytics_fab.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/cisco_fab.png" afterPath="$PROJECT_DIR$/images/cisco_fab.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/cpp_fab.png" afterPath="$PROJECT_DIR$/images/cpp_fab.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/csharp_fab.png" afterPath="$PROJECT_DIR$/images/csharp_fab.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/css_fab.png" afterPath="$PROJECT_DIR$/images/css_fab.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/english_circle.png" afterPath="$PROJECT_DIR$/images/english_circle.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/german_circle.png" afterPath="$PROJECT_DIR$/images/german_circle.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/git_fab.png" afterPath="$PROJECT_DIR$/images/git_fab.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/github.png" afterPath="$PROJECT_DIR$/images/github.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/html5_fab.png" afterPath="$PROJECT_DIR$/images/html5_fab.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/java_fab.png" afterPath="$PROJECT_DIR$/images/java_fab.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/jb_fab.png" afterPath="$PROJECT_DIR$/images/jb_fab.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/jquery_fab.png" afterPath="$PROJECT_DIR$/images/jquery_fab.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/js_fab.png" afterPath="$PROJECT_DIR$/images/js_fab.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/linux_fab.png" afterPath="$PROJECT_DIR$/images/linux_fab.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/netbeans_fab.png" afterPath="$PROJECT_DIR$/images/netbeans_fab.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/php_fab.png" afterPath="$PROJECT_DIR$/images/php_fab.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/sf_fab.png" afterPath="$PROJECT_DIR$/images/sf_fab.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/custom_components/cvHobbiesComponent.html" afterPath="$PROJECT_DIR$/custom_components/cvHobbiesComponent.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/custom_components/cvHomeComponent.html" afterPath="$PROJECT_DIR$/custom_components/cvHomeComponent.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/custom_components/cvIconElement.html" afterPath="$PROJECT_DIR$/custom_components/cvIconElement.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/custom_components/cvMainComponent.html" afterPath="$PROJECT_DIR$/custom_components/cvMainComponent.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/custom_components/quickPresentationComponent.html" afterPath="$PROJECT_DIR$/custom_components/quickPresentationComponent.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -62,8 +37,8 @@
       <file leaf-file-name="cvMainComponent.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/custom_components/cvMainComponent.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-14.384615">
-              <caret line="76" column="22" selection-start-line="76" selection-start-column="22" selection-end-line="76" selection-end-column="22" />
+            <state vertical-scroll-proportion="-16.076923">
+              <caret line="75" column="36" selection-start-line="75" selection-start-column="36" selection-end-line="75" selection-end-column="36" />
               <folding />
             </state>
           </provider>
@@ -72,8 +47,8 @@
       <file leaf-file-name="cvProjectsComponent.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/custom_components/cvProjectsComponent.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.6153846">
-              <caret line="4" column="11" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="11" />
+            <state vertical-scroll-proportion="-1.9615384">
+              <caret line="3" column="12" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -82,7 +57,7 @@
       <file leaf-file-name="cvExperienceComponent.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/custom_components/cvExperienceComponent.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0">
+            <state vertical-scroll-proportion="0.0">
               <caret line="33" column="8" selection-start-line="33" selection-start-column="8" selection-end-line="33" selection-end-column="36" />
               <folding />
             </state>
@@ -102,8 +77,8 @@
       <file leaf-file-name="quickPresentationComponent.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/custom_components/quickPresentationComponent.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.2713797">
-              <caret line="23" column="28" selection-start-line="23" selection-start-column="28" selection-end-line="23" selection-end-column="28" />
+            <state vertical-scroll-proportion="0.19384265">
+              <caret line="61" column="14" selection-start-line="61" selection-start-column="14" selection-end-line="61" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -112,7 +87,7 @@
       <file leaf-file-name="customBehaviors.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/custom_behaviors/customBehaviors.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.3076923">
+            <state vertical-scroll-proportion="0.0">
               <caret line="2" column="4" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="4" />
               <folding />
             </state>
@@ -122,8 +97,8 @@
       <file leaf-file-name="cvHomeComponent.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/custom_components/cvHomeComponent.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="55" column="33" selection-start-line="55" selection-start-column="33" selection-end-line="55" selection-end-column="33" />
+            <state vertical-scroll-proportion="-6.5384617">
+              <caret line="56" column="32" selection-start-line="56" selection-start-column="32" selection-end-line="56" selection-end-column="32" />
               <folding />
             </state>
           </provider>
@@ -132,7 +107,7 @@
       <file leaf-file-name="cvIconElement.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/custom_components/cvIconElement.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.807693">
+            <state vertical-scroll-proportion="0.0">
               <caret line="15" column="8" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="39" />
               <folding />
             </state>
@@ -142,7 +117,7 @@
       <file leaf-file-name="cvFormationComponent.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/custom_components/cvFormationComponent.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0">
+            <state vertical-scroll-proportion="0.0">
               <caret line="29" column="14" selection-start-line="29" selection-start-column="14" selection-end-line="29" selection-end-column="14" />
               <folding />
             </state>
@@ -217,8 +192,8 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -355,18 +330,18 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -455,7 +430,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="15" column="10" selection-start-line="15" selection-start-column="10" selection-end-line="15" selection-end-column="10" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -530,7 +504,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="15" column="10" selection-start-line="15" selection-start-column="10" selection-end-line="15" selection-end-column="10" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -679,7 +652,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="20" column="22" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="51" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -687,7 +659,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="17" column="21" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -699,17 +670,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/custom_components/cvHomeComponent.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="55" column="33" selection-start-line="55" selection-start-column="33" selection-end-line="55" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/custom_behaviors/customBehaviors.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.3076923">
+        <state vertical-scroll-proportion="0.0">
           <caret line="2" column="4" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="4" />
           <folding />
         </state>
@@ -719,14 +682,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="33" column="8" selection-start-line="33" selection-start-column="8" selection-end-line="33" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.1923075">
-          <caret line="11" column="44" selection-start-line="11" selection-start-column="44" selection-end-line="11" selection-end-column="44" />
           <folding />
         </state>
       </provider>
@@ -741,32 +696,48 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/custom_components/cvIconElement.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.807693">
+        <state vertical-scroll-proportion="0.0">
           <caret line="15" column="8" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="39" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/custom_components/cvProjectsComponent.html">
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.6153846">
-          <caret line="4" column="11" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="11" />
+        <state vertical-scroll-proportion="-7.1923075">
+          <caret line="11" column="44" selection-start-line="11" selection-start-column="44" selection-end-line="11" selection-end-column="44" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/custom_components/cvMainComponent.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-14.384615">
-          <caret line="76" column="22" selection-start-line="76" selection-start-column="22" selection-end-line="76" selection-end-column="22" />
+        <state vertical-scroll-proportion="-16.076923">
+          <caret line="75" column="36" selection-start-line="75" selection-start-column="36" selection-end-line="75" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/custom_components/cvProjectsComponent.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.9615384">
+          <caret line="3" column="12" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/custom_components/cvHomeComponent.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.5384617">
+          <caret line="56" column="32" selection-start-line="56" selection-start-column="32" selection-end-line="56" selection-end-column="32" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/custom_components/quickPresentationComponent.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2713797">
-          <caret line="23" column="28" selection-start-line="23" selection-start-column="28" selection-end-line="23" selection-end-column="28" />
+        <state vertical-scroll-proportion="0.19384265">
+          <caret line="61" column="14" selection-start-line="61" selection-start-column="14" selection-end-line="61" selection-end-column="14" />
           <folding />
         </state>
       </provider>
