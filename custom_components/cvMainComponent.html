@@ -68,12 +68,12 @@
         <neon-animated-pages class="flex" id="pages" selected="{{selected}}" entry-animation="{{entry}}" exit-animation="{{exit}}">
             <neon-animatable>
                 <div main>
-                    <cv-home-component clickselected="{{selected}}"></cv-home-component>
+                    <cv-home-component clickselected="{{selected}}" data="{{projects}}"></cv-home-component>
                 </div>
             </neon-animatable>
             <neon-animatable>
                 <div main>
-                    <cv-projects-component></cv-projects-component>
+                    <cv-projects-component data="{{projects}}"></cv-projects-component>
                 </div>
             </neon-animatable>
             <neon-animatable>
@@ -95,6 +95,16 @@
                 value: 0,
                 notify: true,
                 observer: 'selectChanged'
+            },
+            projects:{
+                type: Object,
+                value: [
+                    {title: "Titre", desc:"Description", show: true, category: "cpp"},
+                    {title: "Deuxieme titre", desc: "Test description", show: true, category: "web"},
+                    {title: "Wieme titre", desc: "Tesdesx", show: true, category: "web"},
+                    {title: "Teuxieme titre", desc: "Test ption", show: true, category: "cpp"}
+                ],
+                notify: true
             }
         },
 

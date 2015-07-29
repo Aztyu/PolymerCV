@@ -10,7 +10,7 @@
         <div>
             Projects
         </div>
-        <template is="dom-repeat" items="{{data}}" as="data" filter="filtre">
+        <template is="dom-repeat" items="{{data}}" as="data" filter="filtre" observe="show">
             <cv-project-component title={{data.title}} desc={{data.desc}}></cv-project-component>
         </template>
     </template>
@@ -22,18 +22,11 @@
 
         properties: {
             description: Array,
-            data :{
-                type: Object,
-                value: [
-                    {title: "Titre", desc:"Description", show: true},
-                    {title: "Deuxieme titre", desc: "Test description", show: false},
-                    {title: "Wieme titre", desc: "Tesdesx", show: true},
-                    {title: "Teuxieme titre", desc: "Test ption", show: false}
-                ]
-            }
+            data: Array
         },
 
         filtre: function(item){
+            console.log(item);
             return item.show;
         }
     })

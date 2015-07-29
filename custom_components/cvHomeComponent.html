@@ -164,6 +164,10 @@
                 type: Number,
                 value: 0,
                 notify: true
+            },
+            data:{
+                type: Array,
+                notify: true
             }
         },
 
@@ -172,9 +176,15 @@
 
         testclick: function(e) {
             this.clickselected = 1;
+            console.log(this.data);
             var target = e.target;
             var parent = findParentBySelector(target, "cv-icon-component");
-            console.log(parent.attributes[0].value);
+            var category = parent.attributes[0].value;
+            for(var i = 0; i<this.data.length; i++){
+                if(this.data[i].category == category){
+                    this.set('data.' + i + '.show', false);
+                }
+            }
         }
     })
 </script>
