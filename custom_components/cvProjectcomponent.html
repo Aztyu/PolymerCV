@@ -1,0 +1,23 @@
+<link rel="import" href="../bower_components/polymer/polymer.html">
+<link rel="import" href="../bower_components/iron-flex-layout/classes/iron-flex-layout.html">
+
+<dom-module id="cv-project-component">
+    <style>
+    </style>
+
+    <template>
+        <h1>{{ title }}</h1>
+        <p>{{ desc }}</p>
+    </template>
+</dom-module>
+
+<script>
+    Polymer({
+        is: "cv-project-component",
+
+        properties: {
+            title: String,
+            desc: String
+        }
+    })
+</script>

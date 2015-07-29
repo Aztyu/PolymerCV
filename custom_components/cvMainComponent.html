@@ -68,7 +68,7 @@
         <neon-animated-pages class="flex" id="pages" selected="{{selected}}" entry-animation="{{entry}}" exit-animation="{{exit}}">
             <neon-animatable>
                 <div main>
-                    <cv-home-component></cv-home-component>
+                    <cv-home-component clickselected="{{selected}}"></cv-home-component>
                 </div>
             </neon-animatable>
             <neon-animatable>
@@ -93,6 +93,7 @@
             selected:{
                 type: Number,
                 value: 0,
+                notify: true,
                 observer: 'selectChanged'
             }
         },

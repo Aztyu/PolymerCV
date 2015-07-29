@@ -74,19 +74,19 @@
             <div class="content">
                 <p class="category">Développement</p>
                 <div class="icons">
-                    <cv-icon-component text="Langage C/C++, bibliothèque SDL et Irrlicht" image="cpp_fab"></cv-icon-component>
-                    <cv-icon-component text="Java, bibliothèque Swing et développement Android" image="java_fab"></cv-icon-component>
-                    <cv-icon-component text="C#, WPF et Entity Framework" image="csharp_fab"></cv-icon-component>
+                    <cv-icon-component on-click="testclick" filter="cpp" text="Langage C/C++, bibliothèque SDL et Irrlicht" image="cpp_fab"></cv-icon-component>
+                    <cv-icon-component on-click="testclick" filter="java" text="Java, bibliothèque Swing et développement Android" image="java_fab"></cv-icon-component>
+                    <cv-icon-component on-click="testclick" filter="csharp" text="C#, WPF et Entity Framework" image="csharp_fab"></cv-icon-component>
                 </div>
                 <p class="category">Web</p>
                 <div class="icons">
-                    <cv-icon-component text="HTML 5" image="html5_fab"></cv-icon-component>
-                    <cv-icon-component text="CSS 3" image="css_fab"></cv-icon-component>
-                    <cv-icon-component text="JavaScript" image="js_fab"></cv-icon-component>
-                    <cv-icon-component text="Bibliothèque JQuery" image="jquery_fab"></cv-icon-component>
-                    <cv-icon-component text="PHP" image="php_fab"></cv-icon-component>
-                    <cv-icon-component text="Framework Symfony 2" image="sf_fab"></cv-icon-component>
-                    <cv-icon-component text="Optimisation de moteur de recherche et Google Analytics" image="analytics_fab"></cv-icon-component>
+                    <cv-icon-component on-click="testclick" filter="web" text="HTML 5" image="html5_fab"></cv-icon-component>
+                    <cv-icon-component on-click="testclick" filter="web" text="CSS 3" image="css_fab"></cv-icon-component>
+                    <cv-icon-component on-click="testclick" filter="web" text="JavaScript" image="js_fab"></cv-icon-component>
+                    <cv-icon-component on-click="testclick" filter="web" text="Bibliothèque JQuery" image="jquery_fab"></cv-icon-component>
+                    <cv-icon-component on-click="testclick" filter="php" text="PHP" image="php_fab"></cv-icon-component>
+                    <cv-icon-component on-click="testclick" filter="php" text="Framework Symfony 2" image="sf_fab"></cv-icon-component>
+                    <cv-icon-component on-click="testclick" filter="seo" text="Optimisation de moteur de recherche et Google Analytics" image="analytics_fab"></cv-icon-component>
                 </div>
                 <p class="category">Réseau</p>
                 <div class="icons">
@@ -100,9 +100,9 @@
                 </div>
                 <p class="category">Outils</p>
                 <div class="icons">
-                    <cv-icon-component text="Experimenté sur l'IDE Netbeans pour le C++ ou le Java" image="netbeans_fab"></cv-icon-component>
-                    <cv-icon-component text="Experimenté sur la suite Jetbrains (WebStorm, PyCharm, ...)" image="jb_fab"></cv-icon-component>
-                    <cv-icon-component text="Outil de versionnement Git ou Mercurial" image="git_fab"></cv-icon-component>
+                    <cv-icon-component on-click="testclick" filter="cpp" text="Experimenté sur l'IDE Netbeans pour le C++ ou le Java" image="netbeans_fab"></cv-icon-component>
+                    <cv-icon-component on-click="testclick" filter="cpp" text="Experimenté sur la suite Jetbrains (WebStorm, PyCharm, ...)" image="jb_fab"></cv-icon-component>
+                    <cv-icon-component on-click="testclick" filter="git" text="Outil de versionnement Git ou Mercurial" image="git_fab"></cv-icon-component>
                 </div>
             </div>
         </div>
@@ -140,10 +140,41 @@
 </dom-module>
 
 <script>
+    function collectionHas(a, b) { //helper function (see below)
+        for(var i = 0, len = a.length; i < len; i ++) {
+            if(a[i] == b) return true;
+        }
+        return false;
+    }
+
+    function findParentBySelector(elm, selector) {
+        var all = document.querySelectorAll(selector);
+        var cur = elm.parentNode;
+        while(cur && !collectionHas(all, cur)) { //keep going up until you find a match
+            cur = cur.parentNode; //go up
+        }
+        return cur; //will return null if not found
+    }
+
     Polymer({
         is: "cv-home-component",
 
+        properties: {
+            clickselected: {
+                type: Number,
+                value: 0,
+                notify: true
+            }
+        },
+
         ready: function(){
+        },
+
+        testclick: function(e) {
+            this.clickselected = 1;
+            var target = e.target;
+            var parent = findParentBySelector(target, "cv-icon-component");
+            console.log(parent.attributes[0].value);
         }
     })
 </script>

@@ -52,26 +52,34 @@
             margin: 8px 0 8px 8px;
         }
 
+        #presentation{
+            margin: auto;
+            width: 300px;
+            font-size: 1.3em;
+        }
+
     </style>
 
     <template>
         <iron-icon class="picture" src={{computePath("corentin")}} alt="Photo de BEAL Corentin"></iron-icon>
-        <div class="icon">
-            <iron-icon icon="perm-identity" ></iron-icon>
-            <p>BEAL Corentin</p>
-        </div>
-        <div class="icon">
-            <iron-icon icon="home" ></iron-icon>
-            <p>40 Avenue Général Frère</p>
-        </div>
-        <p id="no-icon">69008 LYON</p>
-        <div class="icon">
-            <iron-icon icon="maps:local-phone" ></iron-icon>
-            <p>06.88.01.35.92</p>
-        </div>
-        <div class="icon">
-            <iron-icon icon="maps:directions-car"></iron-icon>
-            <p>Permis B</p>
+        <div id="presentation">
+            <div class="icon">
+                <iron-icon icon="perm-identity" ></iron-icon>
+                <p>BEAL Corentin</p>
+            </div>
+            <div class="icon">
+                <iron-icon icon="home" ></iron-icon>
+                <p>40 Avenue Général Frère</p>
+            </div>
+            <p id="no-icon">69008 LYON</p>
+            <div class="icon">
+                <iron-icon icon="maps:local-phone" ></iron-icon>
+                <p>06.88.01.35.92</p>
+            </div>
+            <div class="icon">
+                <iron-icon icon="maps:directions-car"></iron-icon>
+                <p>Permis B</p>
+            </div>
         </div>
         <div class="links">
             <a href="https://github.com/Aztyu" target="_blank">

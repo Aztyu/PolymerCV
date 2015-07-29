@@ -1,5 +1,6 @@
 <link rel="import" href="../bower_components/polymer/polymer.html">
 <link rel="import" href="../bower_components/iron-flex-layout/classes/iron-flex-layout.html">
+<link rel="import" href="../custom_components/cvProjectcomponent.html">
 
 <dom-module id="cv-projects-component">
     <style>
@@ -9,6 +10,9 @@
         <div>
             Projects
         </div>
+        <template is="dom-repeat" items="{{data}}" as="data" filter="filtre">
+            <cv-project-component title={{data.title}} desc={{data.desc}}></cv-project-component>
+        </template>
     </template>
 </dom-module>
 
@@ -17,7 +21,20 @@
         is: "cv-projects-component",
 
         properties: {
-            description: Array
+            description: Array,
+            data :{
+                type: Object,
+                value: [
+                    {title: "Titre", desc:"Description", show: true},
+                    {title: "Deuxieme titre", desc: "Test description", show: false},
+                    {title: "Wieme titre", desc: "Tesdesx", show: true},
+                    {title: "Teuxieme titre", desc: "Test ption", show: false}
+                ]
+            }
+        },
+
+        filtre: function(item){
+            return item.show;
         }
     })
 </script>
