@@ -1,6 +1,7 @@
 <link rel="import" href="../bower_components/polymer/polymer.html">
 <link rel="import" href="../bower_components/iron-flex-layout/classes/iron-flex-layout.html">
 <link rel="import" href="../custom_components/cvProjectcomponent.html">
+<link rel="import" href="../bower_components/paper-checkbox/paper-checkbox.html">
 
 <dom-module id="cv-projects-component">
     <style>
@@ -10,6 +11,10 @@
         <div>
             Projects
         </div>
+        <template is="dom-repeat" items="{{categories}}" as="category" observe="show">
+            <paper-checkbox on-iron-change="test" checked="{{category.show}}">{{category.text}}</paper-checkbox>
+        </template>
+
         <template is="dom-repeat" items="{{data}}" as="data" filter="filtre" observe="show">
             <cv-project-component title={{data.title}} desc={{data.desc}}></cv-project-component>
         </template>
@@ -17,17 +22,75 @@
 </dom-module>
 
 <script>
+
+
     Polymer({
         is: "cv-projects-component",
 
         properties: {
             description: Array,
-            data: Array
+            data:{
+                type: Array,
+                value: {},
+                notify: true
+            },
+            categories:{
+                type: Array,
+                value:[
+                    {text: "C/C++", category: "cpp", show: true},
+                    {text: "Java", category: "java", show: true},
+                    {text: "Web", category: "web", show: true},
+                    {text: "PHP", category: "php", show: true}
+                ],
+                notify: true,
+                observer: 'showchanged'
+            }
+        },
+
+        updateCategoryFromCheckbox: function(category, show){
+            for(var i = 0; i<this.data.length; i++) {
+                if (this.data[i].category == category) {
+                    console.log(this.data[i])
+                    console.log("data :" + category + ", " + show);
+                    this.set('data.' + i + '.show', show);
+                }
+            }
+        },
+
+        updateCategory: function(category, show){
+            for(var i = 0; i<this.data.length; i++) {
+                if (this.categories[i].category == category) {
+                    console.log(this.data[i])
+                    console.log("data :" + category + ", " + show);
+                    this.set('categories.' + i + '.show', show);
+                }
+            }
         },
 
         filtre: function(item){
-            console.log(item);
             return item.show;
+        },
+
+        showchanged: function(item){
+            console.log("Data changed ");
+            console.log(item);
+            for(var i=0; i<item.length; i++){
+                this.updateCategory(item[i].category, item[i].show);
+            }
+        },
+
+        test: function(item) {
+            category = item.target.innerText;
+            while (category.charAt(0) == ' ') {
+                category = category.substr(1);
+            }
+            console.log(category);
+            for(var i=0; i<this.categories.length; i++){
+                if(this.categories[i].text == category){
+                    console.log("found");
+                    this.updateCategoryFromCheckbox(this.categories[i].category, this.categories[i].show);
+                }
+            }
         }
     })
 </script>
