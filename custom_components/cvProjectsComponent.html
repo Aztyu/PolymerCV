@@ -52,7 +52,7 @@
 
         <div class="wrapper">
             <template is="dom-repeat" items="{{data}}" as="data" filter="filtre" observe="show">
-                <cv-project-component git_link={{data.link}} image={{data.image}} title={{data.title}} desc={{data.desc}}></cv-project-component>
+                <cv-project-component desc={{data.desc}} git_link={{data.link}} image={{data.image}} title={{data.title}} desc={{data.desc}}></cv-project-component>
             </template>
         </div>
 
@@ -79,8 +79,7 @@
                     {text: "Java", category: "java", show: true},
                     {text: "Web", category: "web", show: true},
                     {text: "C#", category: "csharp", show: true},
-                    {text: "SEO", category: "seo", show: true},
-                    {text: "Swift", category: "swift", show: true}
+                    {text: "SEO", category: "seo", show: true}
                 ],
                 notify: true,
                 observer: 'showchanged'

@@ -57,7 +57,9 @@
         <div class="wrapper">
             <iron-icon src="{{computePath(image)}}"></iron-icon>
             <h1>{{ title }}</h1>
-            <p id="desc">{{ desc }}</p>
+            <template is="dom-repeat" items="{{desc}}" as="text">
+                <p id="desc">{{ text }}</p>
+            </template>
             <a href="{{git_link}}">
                 <div class="git_down">
                     <paper-fab icon="input" mini="true"></paper-fab>

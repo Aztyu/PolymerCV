@@ -43,6 +43,12 @@
             min-width: 550px;
             margin: auto;
         }
+
+        p{
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 16px;
+        }
     </style>
 
     <template>
@@ -77,7 +83,7 @@
             </neon-animatable>
             <neon-animatable>
                 <div main>
-                    Documents
+                    <p>Section en cours de travail</p>
                 </div>
             </neon-animatable>
         </neon-animated-pages>
@@ -98,13 +104,13 @@
             projects:{
                 type: Object,
                 value: [
-                    {title: "Editeur 3d", desc:"Un �diteur 3D basique qui permet de creer les formes de bases, de modifier leur taille, rotation et �chelle.\nL'�diteur supporte aussi la cr�ation de plusieurs zones et de groupes pour g�rer plusieurs objets en m�me temps.", link: "https://github.com/Aztyu/Editeur-3D", image: "editeur3D", show: true, category: "cpp"},
-                    {title: "Mon CV", link: "https://github.com/Aztyu/PolymerCV", image: "polymercv", desc: "Test description", show: true, category: "web"},
-                    {title: "Codeine10", link: "http://codeine10.science/", image: "codeine10", desc: "Tesdesx", show: true, category: "seo"},
-                    {title: "Todo list", link: "https://github.com/Aztyu/TodoJava", image: "todolist", desc: "Test ption", show: true, category: "java"},
-                    {title: "Gestionnaire de restaurant", link: "https://github.com/Jitrixis/2NET-Restaurant-Management-Software", image: "restaurant", desc: "Test ption", show: true, category: "csharp"},
-                    {title: "Gestionnaire de taxi", link: "https://github.com/Jitrixis/2NET-Restaurant-Management-Software", image: "taxicsharp", desc: "Test ption", show: true, category: "csharp"},
-                    {title: "Retro breaker", link: "https://github.com/Aztyu/Retro_Breaker", image: "retrobreaker", desc: "Test ption", show: true, category: "cpp"},
+                    {title: "Editeur 3d", desc:["Un éditeur 3D basique qui permet de créer les formes de bases, de modifier leur taille, leur rotation et leur échelle.", "L'éditeur supporte aussi la création de plusieurs zones et de groupes pour gérer plusieurs objets en même temps.","Ce projet a été réaliser en C++ grâce à la bibliothèque Irrlicht"], link: "https://github.com/Aztyu/Editeur-3D", image: "editeur3D", show: true, category: "cpp"},
+                    {title: "Mon CV", link: "https://github.com/Aztyu/PolymerCV", image: "polymercv", desc: ["Il s'agit de mon site personnel qui a pour but de servir de CV et protfolio tout en me permettant d'expérimenter de nouvelles technologies", "J'ai utiliser la technologie Polymer de Google, basé sur les web components, afin d'obtenir un site responsive et material design"], show: true, category: "web"},
+                    {title: "Codeine10", link: "http://codeine10.science/", image: "codeine10", desc: ["Ce site Wordpress a été crée dans le cadre d'un projet SUPINFO sur l'optimisation de site Web","Le but était de placer le site en bonne position sur les moteurs de recherche grâce à diverses techniques et un bon contenu"], show: true, category: "seo"},
+                    {title: "Todo list", link: "https://github.com/Aztyu/TodoJava", image: "todolist", desc: ["Ce programme permet de se connecter et de créer des tâches, il est ensuite possible de commenter ces tâches ou de les fermer","Le programme a été entièrement réaliser en Java avc Swing pour l'interface et une base de données MySQL pour sauvegarder les données"], show: true, category: "java"},
+                    {title: "Gestionnaire de restaurant", link: "https://github.com/Jitrixis/2NET-Restaurant-Management-Software", image: "restaurant", desc: ["Un logiciel qui permet de gérer un restaurant en ajoutant des repas et serveurs puis de les assigner aux tables","Le C# a été utilisé pour créer le programme en WPF et LINQ pour gérer la liaison avec la base de donnée"], show: true, category: "csharp"},
+                    {title: "Gestionnaire de taxi", link: "https://github.com/Jitrixis/2NET-Restaurant-Management-Software", image: "taxicsharp", desc: ["Un logiciel qui permet de gérer une compagnie de taxi en ajoutant des chauffeurs et trajets","Le programme s'exécute en mode console et a été programmé en C#"], show: true, category: "csharp"},
+                    {title: "Retro breaker", link: "https://github.com/Aztyu/Retro_Breaker", image: "retrobreaker", desc: ["Retro breaker est un remake du célébre jeu de casse-brique avec un look rétro/néon","Au niveau technique, le C a été utilisé avec la bibliothèque SDL pour l'affichage"], show: true, category: "cpp"},
                 ],
                 notify: true
             }
