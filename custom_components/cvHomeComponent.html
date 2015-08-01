@@ -181,6 +181,8 @@
             var category = parent.attributes[0].value;
             for(var i = 0; i<this.data.length; i++){
                 if(this.data[i].category == category){
+                    this.set('data.' + i + '.show', true);
+                }else{
                     this.set('data.' + i + '.show', false);
                 }
             }

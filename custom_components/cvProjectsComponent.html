@@ -5,19 +5,57 @@
 
 <dom-module id="cv-projects-component">
     <style>
+        .wrapper{
+        @apply(--layout-wrap);
+            @apply(--layout-horizontal);
+            width: 80%;
+            margin: auto;
+        }
+
+        .boxes{
+            @apply(--layout-wrap);
+            @apply(--layout-horizontal);
+            color: white;
+            margin: 0 0 0 0;
+            padding: 8px 16px 8px 16px;
+            background-color: #1E88E5;
+        }
+
+        .blue{
+            margin: 0 0 0 0;
+            padding: 4px 8px 4px 8px;
+            color: white;
+            background-color: #1E88E5;
+        }
+
+        paper-checkbox{
+            margin: 8px 8px 8px 8px;
+            --paper-checkbox-label-color: white;
+        }
+
+        cv-project-component{
+            min-width: 450px;
+            margin-top: 16px;
+            margin-bottom: 16px;
+            margin-left: auto;
+            margin-right: auto;
+        }
     </style>
 
     <template>
-        <div>
-            Projects
+        <p class="blue">Filtres :</p>
+        <div class="boxes">
+            <template is="dom-repeat" items="{{categories}}" as="category" observe="show">
+                <paper-checkbox on-iron-change="test" checked="{{category.show}}">{{category.text}}</paper-checkbox>
+            </template>
         </div>
-        <template is="dom-repeat" items="{{categories}}" as="category" observe="show">
-            <paper-checkbox on-iron-change="test" checked="{{category.show}}">{{category.text}}</paper-checkbox>
-        </template>
 
-        <template is="dom-repeat" items="{{data}}" as="data" filter="filtre" observe="show">
-            <cv-project-component title={{data.title}} desc={{data.desc}}></cv-project-component>
-        </template>
+        <div class="wrapper">
+            <template is="dom-repeat" items="{{data}}" as="data" filter="filtre" observe="show">
+                <cv-project-component git_text="Clic ici" image="mutest" title={{data.title}} desc={{data.desc}}></cv-project-component>
+            </template>
+        </div>
+
     </template>
 </dom-module>
 
@@ -40,7 +78,8 @@
                     {text: "C/C++", category: "cpp", show: true},
                     {text: "Java", category: "java", show: true},
                     {text: "Web", category: "web", show: true},
-                    {text: "PHP", category: "php", show: true}
+                    {text: "C#", category: "csharp", show: true},
+                    {text: "SEO", category: "seo", show: true}
                 ],
                 notify: true,
                 observer: 'showchanged'
@@ -68,6 +107,12 @@
         },
 
         filtre: function(item){
+            for(var i = 0; i<this.categories.length; i++) {
+                if (this.categories[i].category == item.category && this.categories[i].show != item.show) {
+                    console.log("Update filter");
+                    this.set('categories.' + i + '.show', item.show);
+                }
+            }
             return item.show;
         },
 

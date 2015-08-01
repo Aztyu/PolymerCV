@@ -1,19 +1,70 @@
 <link rel="import" href="../bower_components/polymer/polymer.html">
 <link rel="import" href="../bower_components/iron-flex-layout/classes/iron-flex-layout.html">
+<link rel="import" href="../bower_components/iron-icon/iron-icon.html">
+<link rel="import" href="../custom_behaviors/customBehaviors.html">
+<link rel="import" href="../custom_components/cvIconElement.html">
 
 <dom-module id="cv-project-component">
     <style>
+        paper-fab{
+        @apply(--shadow-elevation-4dp);
+            min-height: 48px;
+            min-width: 48px;
+            --paper-fab-background: black;
+        }
+
+        iron-icon{
+            --iron-icon-height: 384px;
+            --iron-icon-width: 384px;
+            margin: auto;
+        @apply(--layout-self-center);
+        }
+
+        .wrapper{
+        @apply(--layout-vertical);
+        @apply(--shadow-elevation-4dp);
+            padding: 8px 8px 8px 8px;
+            background-color: white;
+        }
+
+        h1{
+            margin-left: 16px;
+        }
+
+        p{
+            padding: 4px 8px 4px 8px;
+        }
+
+        .git_down{
+        @apply(--layout-horizontal);
+            padding-top: 8px;
+            padding-bottom: 8px;
+            padding-left: 16px;
+        }
     </style>
 
     <template>
-        <h1>{{ title }}</h1>
-        <p>{{ desc }}</p>
+        <div class="wrapper">
+            <iron-icon src="{{computePath(image)}}"></iron-icon>
+            <h1>{{ title }}</h1>
+            <p>{{ desc }}</p>
+            <a href="{{git_link}}">
+                <div class="git_down">
+                    <paper-fab src={{computePath("github")}} mini="true"></paper-fab>
+                    <p>T&eacute;l&eacute;charger le projet</p>
+                </div>
+
+            </a>
+        </div>
+
     </template>
 </dom-module>
 
 <script>
     Polymer({
         is: "cv-project-component",
+
+        behaviors: [customBehaviors.ImageBehavior],
 
         properties: {
             title: String,
