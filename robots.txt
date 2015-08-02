@@ -1,0 +1,6 @@
+User-agent: * 
+Disallow: 
+
+Sitemap: http://corentinbeal.olympe.in/sitemap.xml
+
+

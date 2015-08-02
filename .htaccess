@@ -1,0 +1,5 @@
+Redirect 301 http://corentinbeal.olympe.in http://corentinbeal.olympe.in/index.html
+
+ErrorDocument 404 http://corentinbeal.olympe.in/404.html
+
+ErrorDocument 403 http://corentinbeal.olympe.in/404.html
