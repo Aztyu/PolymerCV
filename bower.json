@@ -20,5 +20,8 @@
     "paper-elements": "polymerelements/paper-elements#~1.0.1",
     "neon-elements": "polymerelements/neon-elements#~1.0.0",
     "google-map": "GoogleWebComponents/google-map#1.0.0"
+  },
+  "resolutions": {
+    "polymer": "^1.1.0"
   }
 }

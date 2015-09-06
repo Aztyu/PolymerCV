@@ -21,6 +21,7 @@
         paper-header-panel div{
             background-color: #1565C0;
             padding-top: 10px;
+            width: auto;
 
             font-weight: 300;
             color: white;
@@ -49,25 +50,40 @@
             margin-right: auto;
             margin-top: 16px;
         }
+
+        .flag{
+            margin: 8px 8px 8px 8px;
+        }
+
+        .flag img{
+            max-width: 24px;
+            @apply(--shadow-elevation-4dp);
+        }
     </style>
 
     <template>
         <paper-header-panel>
             <div class="paper-header">
-                <div class="paper-header">
-                    <h1>CV de Corentin BEAL</h1>
-                    <paper-tabs selected="{{selected}}">
-                        <paper-tab>
-                            <div>Accueil</div>
-                        </paper-tab>
-                        <paper-tab>
-                            <div>Projets</div>
-                        </paper-tab>
-                        <paper-tab>
-                            <div>Documents</div>
-                        </paper-tab>
-                    </paper-tabs>
+                <div class="horizontal layout center">
+                    <h1 class="flex">CV de Corentin BEAL</h1>
+                    <div class="flag">
+                      <img src="../images/french_flag.png" onclick="{{test}}"></img>
+                    </div>
+                    <div class="flag">
+                      <img src="../images/english_flag.png" onclick="test('english')"></img>
+                    </div>
                 </div>
+                <paper-tabs selected="{{selected}}">
+                    <paper-tab>
+                        <div>Accueil</div>
+                    </paper-tab>
+                    <paper-tab>
+                        <div>Projets</div>
+                    </paper-tab>
+                    <paper-tab>
+                        <div>Documents</div>
+                    </paper-tab>
+                </paper-tabs>
             </div>
         </paper-header-panel>
         <neon-animated-pages class="flex" id="pages" selected="{{selected}}" entry-animation="{{entry}}" exit-animation="{{exit}}">
@@ -133,6 +149,10 @@
                 this.entry = 'slide-from-right-animation';
                 this.exit = 'slide-left-animation';
             }
+        },
+
+        test: function(language){
+            console.log('Hello');
         }
     })
 </script>
