@@ -95,11 +95,11 @@
         <neon-animated-pages class="flex" id="pages" selected="{{selected}}" entry-animation="{{entry}}" exit-animation="{{exit}}">
             <neon-animatable>
                 <div main>
-                    <cv-home-component clickselected="{{selected}}" data="{{projects}}"></cv-home-component>
+                    <cv-home-component language="{{language}}" clickselected="{{selected}}" data="{{projects}}"></cv-home-component>
                 </div>
             </neon-animatable>
             <neon-animatable>
-                    <cv-projects-component class="vertical " data-project="{{projects}}"></cv-projects-component>
+                    <cv-projects-component language="{{language}}" class="vertical"></cv-projects-component>
             </neon-animatable>
             <neon-animatable>
                 <div main>
@@ -146,6 +146,11 @@
             ajaxurl:{
                 type: String,
                 value: "json/fr/main.json"
+            },
+            language:{
+              type: String,
+              value: "french",
+              notify: true
             }
         },
 
@@ -181,6 +186,7 @@
                         this.$.mainrequest.generateRequest();
                         enabled = true;
                         this.languages.english.enabled = false;
+                        this.language = "french";
                         element.setAttribute("src", "images/french_flag.png");
                         other.setAttribute("src", "images/english_flag_off.png");
                     }
@@ -193,6 +199,7 @@
                         this.$.mainrequest.generateRequest();
                         enabled = true;
                         this.languages.french.enabled = false;
+                        this.language = "english";
                         element.setAttribute("src", "images/english_flag.png");
                         other.setAttribute("src", "images/french_flag_off.png");
                     }

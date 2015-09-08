@@ -67,11 +67,7 @@
 
         properties: {
             description: Array,
-            dataProject:{
-                type: Object,
-                value: {},
-                notify: true
-            },
+            dataProject: Array,
             categories:{
                 type: Array,
                 value:[
@@ -87,14 +83,17 @@
         },
 
         updateCategoryFromCheckbox: function(category, show){
+          if(this.dataProject !== undefined){
             for(var i = 0; i<this.dataProject.length; i++) {
                 if (this.dataProject[i].category == category) {
                     this.set('dataProject.' + i + '.show', show);
                 }
             }
+          }
         },
 
         updateCategory: function(category, show){
+          if(this.dataProject !== undefined){
             for(var i = 0; i<this.dataProject.length; i++) {
                 if(this.categories[i] !== undefined){
                     if (this.categories[i].category == category) {
@@ -102,6 +101,7 @@
                     }
                 }
             }
+          }
         },
 
         filtre: function(item){

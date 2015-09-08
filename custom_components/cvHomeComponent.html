@@ -49,18 +49,20 @@
     </style>
 
     <template>
+      <iron-ajax
+              id="homerequest"
+              url="{{ajaxurl}}"
+              handle-as="json"
+              last-response="{{resource}}"></iron-ajax>
+
         <div card>
-            <div class="title">
-                Présentation
-            </div>
+            <div class="title">{{resource.presentation}}</div>
             <div class="content">
                 <quick-presentation-component></quick-presentation-component>
             </div>
         </div>
         <div card>
-            <div class="title">
-                Situation actuelle
-            </div>
+            <div class="title">{{resource.situation}}</div>
             <div class="content">
                 <p>Actuellement étudiant en informatique à SUPINFO Lyon en 2ème année.</p>
                 <p>En recherche d’un stage à temps partiel 2 jours par semaine (jeudi et vendredi) pour ma 3ème année à SUPINFO de Novembre 2015 à juin 2016).</p>
@@ -160,6 +162,10 @@
         is: "cv-home-component",
 
         properties: {
+            resource:{
+              type: Object,
+              notify: true
+            },
             clickselected: {
                 type: Number,
                 value: 0,
@@ -168,10 +174,36 @@
             data:{
                 type: Array,
                 notify: true
+            },
+            language:{
+              type: String,
+              notify: true,
+              observer: "languageChanged"
+            },
+            ajaxurl:{
+                type: String,
+                value: "json/fr/home.json"
             }
         },
 
         ready: function(){
+          this.$.homerequest.generateRequest();
+        },
+
+        languageChanged: function(){
+          console.log(this.language);
+          if(this.language === "english"){
+              console.log("english");
+              this.set('ajaxurl', "json/en/home.json");
+              //this.ajaxurl = "json/en/home.json";
+              this.$.homerequest.generateRequest();
+          }else if(this.language === "french"){
+              console.log("french");
+              this.set('ajaxurl', "json/fr/home.json");
+              //this.ajaxurl = "json/fr/home.json";
+              this.$.homerequest.generateRequest();
+          }
+          console.log(this.resource);
         },
 
         testclick: function(e) {
