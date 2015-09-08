@@ -51,7 +51,7 @@
         </div>
 
         <div class="wrapper">
-            <template is="dom-repeat" items="{{data}}" as="data" filter="filtre" observe="show">
+            <template is="dom-repeat" items="{{dataProject}}" as="data" filter="filtre" observe="show">
                 <cv-project-component desc={{data.desc}} git_link={{data.link}} image={{data.image}} title={{data.title}} desc={{data.desc}}></cv-project-component>
             </template>
         </div>
@@ -67,8 +67,8 @@
 
         properties: {
             description: Array,
-            data:{
-                type: Array,
+            dataProject:{
+                type: Object,
                 value: {},
                 notify: true
             },
@@ -87,15 +87,15 @@
         },
 
         updateCategoryFromCheckbox: function(category, show){
-            for(var i = 0; i<this.data.length; i++) {
-                if (this.data[i].category == category) {
-                    this.set('data.' + i + '.show', show);
+            for(var i = 0; i<this.dataProject.length; i++) {
+                if (this.dataProject[i].category == category) {
+                    this.set('dataProject.' + i + '.show', show);
                 }
             }
         },
 
         updateCategory: function(category, show){
-            for(var i = 0; i<this.data.length; i++) {
+            for(var i = 0; i<this.dataProject.length; i++) {
                 if(this.categories[i] !== undefined){
                     if (this.categories[i].category == category) {
                         this.set('categories.' + i + '.show', show);

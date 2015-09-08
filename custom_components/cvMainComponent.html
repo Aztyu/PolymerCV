@@ -1,6 +1,7 @@
 <link rel="import" href="../bower_components/polymer/polymer.html">
 <link rel="import" href="cvHomeComponent.html">
 <link rel="import" href="../bower_components/paper-tabs/paper-tabs.html">
+<link rel="import" href="../bower_components/iron-ajax/iron-ajax.html">
 <link rel="import" href="../bower_components/iron-flex-layout/classes/iron-flex-layout.html">
 <link rel="import" href="../bower_components/iron-pages/iron-pages.html">
 <link rel="import" href="../bower_components/neon-animation/neon-animated-pages.html">
@@ -57,31 +58,36 @@
 
         .flag img{
             max-width: 24px;
-            @apply(--shadow-elevation-4dp);
+        @apply(--shadow-elevation-4dp);
         }
     </style>
 
     <template>
+        <iron-ajax
+                id="mainrequest"
+                url="{{ajaxurl}}"
+                handle-as="json"
+                last-response="{{resource}}"></iron-ajax>
         <paper-header-panel>
             <div class="paper-header">
                 <div class="horizontal layout center">
-                    <h1 class="flex">CV de Corentin BEAL</h1>
+                    <h1 class="flex">{{resource.title}}</h1>
                     <div class="flag">
-                      <img id="french_flag" src="../images/french_flag.png" on-click="test"></img>
+                        <img id="french_flag" src="../images/french_flag.png" on-click="test"></img>
                     </div>
                     <div class="flag">
-                      <img id="english_flag" src="../images/english_flag_off.png" on-click="test"></img>
+                        <img id="english_flag" src="../images/english_flag_off.png" on-click="test"></img>
                     </div>
                 </div>
                 <paper-tabs selected="{{selected}}">
                     <paper-tab>
-                        <div>Accueil</div>
+                        <div>{{resource.home}}</div>
                     </paper-tab>
                     <paper-tab>
-                        <div>Projets</div>
+                        <div>{{resource.project}}</div>
                     </paper-tab>
                     <paper-tab>
-                        <div>Documents</div>
+                        <div>{{resource.document}}</div>
                     </paper-tab>
                 </paper-tabs>
             </div>
@@ -93,9 +99,7 @@
                 </div>
             </neon-animatable>
             <neon-animatable>
-                <div main>
-                    <cv-projects-component data="{{projects}}"></cv-projects-component>
-                </div>
+                    <cv-projects-component class="vertical " data-project="{{projects}}"></cv-projects-component>
             </neon-animatable>
             <neon-animatable>
                 <div main>
@@ -111,6 +115,10 @@
     Polymer({
         is:"cv-main-component",
         properties: {
+            resource:{
+              type: Object,
+              notify: true
+            },
             selected:{
                 type: Number,
                 value: 0,
@@ -121,29 +129,28 @@
                 type: Object,
                 value: [
                     {title: "Editeur 3d", desc:["Un éditeur 3D basique qui permet de créer les formes de bases, de modifier leur taille, leur rotation et leur échelle.", "L'éditeur supporte aussi la création de plusieurs zones et de groupes pour gérer plusieurs objets en même temps.","Ce projet a été réaliser en C++ grâce à la bibliothèque Irrlicht"], link: "https://github.com/Aztyu/Editeur-3D", image: "editeur3D", show: true, category: "cpp"},
-                    {title: "Mon CV", link: "https://github.com/Aztyu/PolymerCV", image: "polymercv", desc: ["Il s'agit de mon site personnel qui a pour but de servir de CV et protfolio tout en me permettant d'expérimenter de nouvelles technologies", "J'ai utiliser la technologie Polymer de Google, basé sur les web components, afin d'obtenir un site responsive et material design"], show: true, category: "web"},
-                    {title: "Codeine10", link: "http://codeine10.science/", image: "codeine10", desc: ["Ce site Wordpress a été crée dans le cadre d'un projet SUPINFO sur l'optimisation de site Web","Le but était de placer le site en bonne position sur les moteurs de recherche grâce à diverses techniques et un bon contenu"], show: true, category: "seo"},
-                    {title: "Todo list", link: "https://github.com/Aztyu/TodoJava", image: "todolist", desc: ["Ce programme permet de se connecter et de créer des tâches, il est ensuite possible de commenter ces tâches ou de les fermer","Le programme a été entièrement réaliser en Java avc Swing pour l'interface et une base de données MySQL pour sauvegarder les données"], show: true, category: "java"},
-                    {title: "Gestionnaire de restaurant", link: "https://github.com/Jitrixis/2NET-Restaurant-Management-Software", image: "restaurant", desc: ["Un logiciel qui permet de gérer un restaurant en ajoutant des repas et serveurs puis de les assigner aux tables","Le C# a été utilisé pour créer le programme en WPF et LINQ pour gérer la liaison avec la base de donnée"], show: true, category: "csharp"},
-                    {title: "Gestionnaire de taxi", link: "https://github.com/Jitrixis/2NET-Restaurant-Management-Software", image: "taxicsharp", desc: ["Un logiciel qui permet de gérer une compagnie de taxi en ajoutant des chauffeurs et trajets","Le programme s'exécute en mode console et a été programmé en C#"], show: true, category: "csharp"},
-                    {title: "Retro breaker", link: "https://github.com/Aztyu/Retro_Breaker", image: "retrobreaker", desc: ["Retro breaker est un remake du célébre jeu de casse-brique avec un look rétro/néon","Au niveau technique, le C a été utilisé avec la bibliothèque SDL pour l'affichage"], show: true, category: "cpp"},
                 ],
                 notify: true
             },
             languages:{
                 type: Object,
                 value:{
-                   "french":{
-                      enabled: true
-                   },
-                   "english":{
-                      enabled: false
-                   }
+                    "french":{
+                        enabled: true
+                    },
+                    "english":{
+                        enabled: false
+                    }
                 }
+            },
+            ajaxurl:{
+                type: String,
+                value: "json/fr/main.json"
             }
         },
 
         ready: function(){
+          this.$.mainrequest.generateRequest();
         },
 
         selectChanged: function(newValue, oldValue) {
@@ -166,28 +173,30 @@
             element = language.srcElement;
             id = element.getAttribute("id");
             switch(id){
-              case 'french_flag':
-                  enabled = this.languages.french.enabled;
-                  other = this.$.english_flag;
-                  if(!enabled){
-                    console.log("test");
-                      enabled = true;
-                      this.languages.english.enabled = false;
-                      element.setAttribute("src", "images/french_flag.png");
-                      other.setAttribute("src", "images/english_flag_off.png");
-                  }
-                  break;
-              case 'english_flag':
-                  enabled = this.languages.english.enabled;
-                  other = this.$.french_flag;
-                  if(!enabled){
-                      console.log("test");
-                      enabled = true;
-                      this.languages.french.enabled = false;
-                      element.setAttribute("src", "images/english_flag.png");
-                      other.setAttribute("src", "images/french_flag_off.png");
-                  }
-                  break;
+                case 'french_flag':
+                    enabled = this.languages.french.enabled;
+                    other = this.$.english_flag;
+                    if(!enabled){
+                        this.ajaxurl = "json/fr/main.json";
+                        this.$.mainrequest.generateRequest();
+                        enabled = true;
+                        this.languages.english.enabled = false;
+                        element.setAttribute("src", "images/french_flag.png");
+                        other.setAttribute("src", "images/english_flag_off.png");
+                    }
+                    break;
+                case 'english_flag':
+                    enabled = this.languages.english.enabled;
+                    other = this.$.french_flag;
+                    if(!enabled){
+                        this.ajaxurl = "json/en/main.json";
+                        this.$.mainrequest.generateRequest();
+                        enabled = true;
+                        this.languages.french.enabled = false;
+                        element.setAttribute("src", "images/english_flag.png");
+                        other.setAttribute("src", "images/french_flag_off.png");
+                    }
+                    break;
             }
         }
     })
