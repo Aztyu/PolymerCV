@@ -1,4 +1,14 @@
 {
   "presentation": "Presentation",
-  "situation": "Actual situation"
+  "situation": {
+      "title": "Actual situation",
+      "text":[
+        "Place holder",
+        "Place holder",
+        "Place holder"
+      ]
+    },
+    "skill":{
+        "title": "Skills"
+    }
 }

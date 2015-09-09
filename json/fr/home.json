@@ -1,4 +1,14 @@
 {
   "presentation": "Présentation",
-  "situation": "Situation actuelle"
+  "situation": {
+      "title": "Situation actuelle",
+      "text":[
+        "Actuellement étudiant en informatique à SUPINFO Lyon en 2ème année.",
+        "En recherche d’un stage à temps partiel 2 jours par semaine (jeudi et vendredi) pour ma 3ème année à SUPINFO de Novembre 2015 à juin 2016).",
+        "Je reste disponible par mail pour toutes questions."
+      ]
+    },
+    "skill":{
+        "title":"Compétences"
+    }
 }

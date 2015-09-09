@@ -62,17 +62,15 @@
             </div>
         </div>
         <div card>
-            <div class="title">{{resource.situation}}</div>
+            <div class="title">{{resource.situation.title}}</div>
             <div class="content">
-                <p>Actuellement étudiant en informatique à SUPINFO Lyon en 2ème année.</p>
-                <p>En recherche d’un stage à temps partiel 2 jours par semaine (jeudi et vendredi) pour ma 3ème année à SUPINFO de Novembre 2015 à juin 2016).</p>
-                <p>Je reste disponible par mail pour toutes questions.</p>
+                <template is="dom-repeat" items="{{resource.situation.text}}" as="phrase">
+                    <p>{{phrase}}</p>
+                </template>
             </div>
         </div>
         <div card>
-            <div class="title">
-                Compétences
-            </div>
+            <div class="title">{{resource.skill.title}}</div>
             <div class="content">
                 <p class="category">Développement</p>
                 <div class="icons">
