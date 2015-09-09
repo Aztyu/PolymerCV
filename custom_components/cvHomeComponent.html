@@ -75,34 +75,32 @@
                 <template is="dom-repeat" items="{{resource.skill.category}}" as="category">
                     <p class="category">{{category.title}}</p>
                     <template is="dom-repeat" items="{{category.item}}" as="item">
-                        <cv-icon-component on-click="testclick" filter="{{item.filter}}" text="{{item.text}}" image="{{item.image}}"></cv-icon-component>
+                        <cv-icon-component on-click="clickFilter" filter="{{item.filter}}" text="{{item.text}}" image="{{item.image}}"></cv-icon-component>
                     </template>
                 </template>
             </div>
         </div>
         <div card>
-            <div class="title">
-                Formation
-            </div>
+            <div class="title">{{resource.education.title}}</div>
             <div class="content">
-                <cv-formation-component src="http://www.supinfo.com/" description='["SUPINFO est une formation informatique générale, allant du développement au sys-dév"]' image="supinfo" cursus="Licence Informatique" school="SUPINFO" date="En cours"></cv-formation-component>
-                <cv-formation-component src="http://www.escy.net/" description='["Bac S obtenu à l&#39;ESCY avec option européenne et mention bien."]' image="escy" cursus="Baccalauréat S-SVT" school="ESCY" date="2013"></cv-formation-component>
+                <template is="dom-repeat" items="{{resource.education.school}}" as="school">
+                    <cv-formation-component src="{{school.src}}" description="{{school.description}}" image="{{school.image}}" cursus="{{school.cursus}}" school="{{school.name}}" date="{{school.date}}"></cv-formation-component>
+                </template>
             </div>
         </div>
         <div card>
-            <div class="title">
-                Expériences
-            </div>
+            <div class="title">{{resource.experience.title}}</div>
             <div class="content">
+                <template is="dom-repeat" items="{{resource.experience.job}}" as="job">
+                    <cv-experience-component src="{{job.src}}" description="{{job.description}}" latitude="{{job.localization.latitude}}" longitude="{{job.localization.longitude}}" company="{{job.company}}" image="{{job.image}}" position="{{job.position}}" date="{{job.date}}"></cv-experience-component>
+                </template>
                 <cv-experience-component src="http://www.mu-test.com/" description='["Découverte de certains aspects du développement informatique tel que les langages C++ et Java (Swing), le test de logiciel et la méthode AGILE.", "Travail sur des améliorations dans l’interface du logiciel développé par Mu-Test en Java aidé de la bibliothèque Swing.", "Apport de modifications sur la partie C++ du logicel qui expose une API au client et communique avec les machines.", "Initiation à la fonction de testeur en effectuant des campagnes de test fonctionnel via Testlink sur les releases du logiciel Mu-Test et du report de bugs via Redmine."]' latitude="45.3314691" longitude="4.3113186" company="MuTest" image="mutest" position="Développeur/Testeur" date="01/07/2014 au 31/10/2014"></cv-experience-component>
                 <cv-experience-component src="http://www.oriol-fontanel.fr/" description='["Surveillance et relève sur des machines de production de rubans textiles."]' latitude="45.180424" longitude="4.319112" company="ORIOL-FONTANEL" image="oriol" position="Conditionneur" date="01/08/2013 au 31/10/2013"></cv-experience-component>
                 <cv-experience-component src="http://www.grangergroup.fr/" description='["Travail en tant qu&#39;ouvrier sur des machines de production de sac et matériaux plastiques."]' latitude="45.2526937" longitude="4.2501715" company="GRANGER" image="granger" position="Conditionneur" date="01/07/2013 au 31/07/2013"></cv-experience-component>
             </div>
         </div>
         <div card>
-            <div class="title">
-                Mes centres d’intérêts
-            </div>
+            <div class="title">Mes centres d’intérêts</div>
             <div class="content">
                 <cv-hobbies-component description='["Voyages en immersion aux USA (Chicago) pendant 1 mois en mars 2012 ..."]' image="chicago"></cv-hobbies-component>
                 <cv-hobbies-component description='["et en Allemagne (Munich) pendant 2 semaines en Décembre 2011."]' image="munich"></cv-hobbies-component>
@@ -167,18 +165,16 @@
           if(this.language === "english"){
               console.log("english");
               this.set('ajaxurl', "json/en/home.json");
-              //this.ajaxurl = "json/en/home.json";
               this.$.homerequest.generateRequest();
           }else if(this.language === "french"){
               console.log("french");
               this.set('ajaxurl', "json/fr/home.json");
-              //this.ajaxurl = "json/fr/home.json";
               this.$.homerequest.generateRequest();
           }
           console.log(this.resource);
         },
 
-        testclick: function(e) {
+        clickFilter: function(e) {
             this.clickselected = 1;
             var target = e.target;
             var parent = findParentBySelector(target, "cv-icon-component");

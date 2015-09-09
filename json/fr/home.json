@@ -122,5 +122,52 @@
                 ]
             }
         ]
+    },
+    "education":{
+        "title": "Formation",
+        "school":[
+            {
+                "name":"SUPINFO",
+                "src":"http://www.supinfo.com/",
+                "image":"supinfo",
+                "cursus": "Licence Informatique",
+                "date":"En cours",
+                "description": [
+                    "SUPINFO est une formation informatique générale, allant du développement au sys-dév"
+                ]
+            },
+            {
+                "name":"ESCY",
+                "src":"http://www.escy.net/",
+                "image":"escy",
+                "cursus": "Baccalauréat S-SVT",
+                "date":"2013",
+                "description": [
+                    "Bac S obtenu à l'ESCY avec option européenne et mention bien."
+                ]
+            }
+        ]
+    },
+    "experience":{
+        "title": "Expérience",
+        "job":[
+            {
+                "company":"Mu-Test",
+                "src":"http://www.mu-test.com/",
+                "image":"mutest",
+                "localization": {
+                    "longitude":4.3113186,
+                    "latitude":45.3314691
+                },
+                "position":"Développeur/Testeur",
+                "date":"01/07/2014 au 31/10/2014",
+                "description": [
+                    "Découverte de certains aspects du développement informatique tel que les langages C++ et Java (Swing), le test de logiciel et la méthode AGILE.",
+                    "Travail sur des améliorations dans l’interface du logiciel développé par Mu-Test en Java aidé de la bibliothèque Swing.",
+                    "Apport de modifications sur la partie C++ du logicel qui expose une API au client et communique avec les machines.",
+                    "Initiation à la fonction de testeur en effectuant des campagnes de test fonctionnel via Testlink sur les releases du logiciel Mu-Test et du report de bugs via Redmine."
+                ]
+            }
+        ]
     }
 }
