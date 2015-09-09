@@ -9,6 +9,108 @@
       ]
     },
     "skill":{
-        "title": "Skills"
+        "title": "Skills",
+        "category":[
+            {
+                "title":"Development",
+                "item": [
+                    {
+                       "filter": "cpp",
+                       "text": "Language C/C++, SDL and Irrlicht library",
+                       "image": "cpp_fab"
+                    }
+                ]
+            },
+            {
+                "title":"Web",
+                "item": [
+                    {
+                       "filter": "web",
+                       "text": "HTML 5",
+                       "image": "html5_fab"
+                    },
+                    {
+                       "filter": "web",
+                       "text": "CSS 3",
+                       "image": "css_fab"
+                    },
+                    {
+                       "filter": "web",
+                       "text": "Javascript",
+                       "image": "js_fab"
+                    },
+                    {
+                       "filter": "web",
+                       "text": "Bibliothèque JQuery",
+                       "image": "jquery_fab"
+                    },
+                    {
+                       "filter": "php",
+                       "text": "PHP 5.5, base de données MySQL",
+                       "image": "php_fab"
+                    },
+                    {
+                       "filter": "php",
+                       "text": "Framework Symfony 2",
+                       "image": "sf_fab"
+                    },
+                    {
+                       "filter": "seo",
+                       "text": "Optimisation de moteur de recherche et Google Analytics",
+                       "image": "analytics_fab"
+                    }
+                ]
+            },
+            {
+                "title":"Networking and server",
+                "item": [
+                    {
+                       "filter": "none",
+                       "text": "Utilisation et configuration de systèmes Linux",
+                       "image": "linux_fab"
+                    },
+                    {
+                       "filter": "none",
+                       "text": "Configuration de réseaux locaux et de routeur (langage IOS Cisco)",
+                       "image": "cisco_fab"
+                    }
+                ]
+            },
+            {
+                "title":"Languages",
+                "item": [
+                    {
+                       "filter": "none",
+                       "text": "Anglais lu, écrit, parlé (niveau B1 certifié CAMBRIDGE)",
+                       "image": "english_circle"
+                    },
+                    {
+                       "filter": "none",
+                       "text": "Configuration de réseaux locaux et de routeur (langage IOS Cisco)",
+                       "image": "german_circle"
+                    }
+                ]
+            },
+            {
+                "title":"Tools",
+                "item": [
+                    {
+                       "filter": "cpp",
+                       "text": "Experimenté sur l'IDE Netbeans pour le C++ ou le Java",
+                       "image": "netbeans_fab"
+                    },
+                    {
+                       "filter": "cpp",
+                       "text": "Experimenté sur la suite Jetbrains (WebStorm, PyCharm, ...)",
+                       "image": "jb_fab"
+                    },
+                    {
+                       "filter": "git",
+                       "text": "Outil de versionnement Git ou Mercurial",
+                       "image": "git_fab"
+                    }
+                ]
+            }
+        ]
     }
 }

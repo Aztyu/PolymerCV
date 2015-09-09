@@ -9,6 +9,118 @@
       ]
     },
     "skill":{
-        "title":"Compétences"
+        "title":"Compétences",
+        "category":[
+            {
+                "title":"Dévelopement",
+                "item": [
+                    {
+                       "filter": "cpp",
+                       "text": "Langage C/C++, bibliothèque SDL et Irrlicht",
+                       "image": "cpp_fab"
+                    },
+                    {
+                       "filter": "java",
+                       "text": "Java, bibliothèque Swing et développement Android",
+                       "image": "java_fab"
+                    },
+                    {
+                       "filter": "csharp",
+                       "text": "Langage C/C++, bibliothèque SDL et Irrlicht",
+                       "image": "csharp_fab"
+                    }
+                ]
+            },
+            {
+                "title":"Web",
+                "item": [
+                    {
+                       "filter": "web",
+                       "text": "HTML 5",
+                       "image": "html5_fab"
+                    },
+                    {
+                       "filter": "web",
+                       "text": "CSS 3",
+                       "image": "css_fab"
+                    },
+                    {
+                       "filter": "web",
+                       "text": "Javascript",
+                       "image": "js_fab"
+                    },
+                    {
+                       "filter": "web",
+                       "text": "Bibliothèque JQuery",
+                       "image": "jquery_fab"
+                    },
+                    {
+                       "filter": "php",
+                       "text": "PHP 5.5, base de données MySQL",
+                       "image": "php_fab"
+                    },
+                    {
+                       "filter": "php",
+                       "text": "Framework Symfony 2",
+                       "image": "sf_fab"
+                    },
+                    {
+                       "filter": "seo",
+                       "text": "Optimisation de moteur de recherche et Google Analytics",
+                       "image": "analytics_fab"
+                    }
+                ]
+            },
+            {
+                "title":"Réseau",
+                "item": [
+                    {
+                       "filter": "none",
+                       "text": "Utilisation et configuration de systèmes Linux",
+                       "image": "linux_fab"
+                    },
+                    {
+                       "filter": "none",
+                       "text": "Configuration de réseaux locaux et de routeur (langage IOS Cisco)",
+                       "image": "cisco_fab"
+                    }
+                ]
+            },
+            {
+                "title":"Langues",
+                "item": [
+                    {
+                       "filter": "none",
+                       "text": "Anglais lu, écrit, parlé (niveau B1 certifié CAMBRIDGE)",
+                       "image": "english_circle"
+                    },
+                    {
+                       "filter": "none",
+                       "text": "Configuration de réseaux locaux et de routeur (langage IOS Cisco)",
+                       "image": "german_circle"
+                    }
+                ]
+            },
+            {
+                "title":"Outils",
+                "item": [
+                    {
+                       "filter": "cpp",
+                       "text": "Experimenté sur l'IDE Netbeans pour le C++ ou le Java",
+                       "image": "netbeans_fab"
+                    },
+                    {
+                       "filter": "cpp",
+                       "text": "Experimenté sur la suite Jetbrains (WebStorm, PyCharm, ...)",
+                       "image": "jb_fab"
+                    },
+                    {
+                       "filter": "git",
+                       "text": "Outil de versionnement Git ou Mercurial",
+                       "image": "git_fab"
+                    }
+                ]
+            }
+        ]
     }
 }

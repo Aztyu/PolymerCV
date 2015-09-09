@@ -72,38 +72,12 @@
         <div card>
             <div class="title">{{resource.skill.title}}</div>
             <div class="content">
-                <p class="category">Développement</p>
-                <div class="icons">
-                    <cv-icon-component on-click="testclick" filter="cpp" text="Langage C/C++, bibliothèque SDL et Irrlicht" image="cpp_fab"></cv-icon-component>
-                    <cv-icon-component on-click="testclick" filter="java" text="Java, bibliothèque Swing et développement Android" image="java_fab"></cv-icon-component>
-                    <cv-icon-component on-click="testclick" filter="csharp" text="C#, WPF et Entity Framework" image="csharp_fab"></cv-icon-component>
-                </div>
-                <p class="category">Web</p>
-                <div class="icons">
-                    <cv-icon-component on-click="testclick" filter="web" text="HTML 5" image="html5_fab"></cv-icon-component>
-                    <cv-icon-component on-click="testclick" filter="web" text="CSS 3" image="css_fab"></cv-icon-component>
-                    <cv-icon-component on-click="testclick" filter="web" text="JavaScript" image="js_fab"></cv-icon-component>
-                    <cv-icon-component on-click="testclick" filter="web" text="Bibliothèque JQuery" image="jquery_fab"></cv-icon-component>
-                    <cv-icon-component on-click="testclick" filter="php" text="PHP" image="php_fab"></cv-icon-component>
-                    <cv-icon-component on-click="testclick" filter="php" text="Framework Symfony 2" image="sf_fab"></cv-icon-component>
-                    <cv-icon-component on-click="testclick" filter="seo" text="Optimisation de moteur de recherche et Google Analytics" image="analytics_fab"></cv-icon-component>
-                </div>
-                <p class="category">Réseau</p>
-                <div class="icons">
-                    <cv-icon-component text="Utilisation et configuration de systèmes Linux" image="linux_fab"></cv-icon-component>
-                    <cv-icon-component text="Configuration de réseaux locaux et de routeur (langage IOS Cisco)" image="cisco_fab"></cv-icon-component>
-                </div>
-                <p class="category">Langues</p>
-                <div class="icons">
-                    <cv-icon-component text="Anglais lu, écrit, parlé (niveau B1 certifié CAMBRIDGE)" image="english_circle"></cv-icon-component>
-                    <cv-icon-component text="Allemand lu, écrit, parlé" image="german_circle"></cv-icon-component>
-                </div>
-                <p class="category">Outils</p>
-                <div class="icons">
-                    <cv-icon-component on-click="testclick" filter="cpp" text="Experimenté sur l'IDE Netbeans pour le C++ ou le Java" image="netbeans_fab"></cv-icon-component>
-                    <cv-icon-component on-click="testclick" filter="cpp" text="Experimenté sur la suite Jetbrains (WebStorm, PyCharm, ...)" image="jb_fab"></cv-icon-component>
-                    <cv-icon-component on-click="testclick" filter="git" text="Outil de versionnement Git ou Mercurial" image="git_fab"></cv-icon-component>
-                </div>
+                <template is="dom-repeat" items="{{resource.skill.category}}" as="category">
+                    <p class="category">{{category.title}}</p>
+                    <template is="dom-repeat" items="{{category.item}}" as="item">
+                        <cv-icon-component on-click="testclick" filter="{{item.filter}}" text="{{item.text}}" image="{{item.image}}"></cv-icon-component>
+                    </template>
+                </template>
             </div>
         </div>
         <div card>
