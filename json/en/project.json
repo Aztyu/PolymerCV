@@ -1,11 +1,13 @@
 {
     "filter": "Filters :",
-    "linktext": "Accéder au projet",
+    "linktext": "Go to the project",
     "projects":[
         {
-            "title": "Editeur 3D",
+            "title": "3D Editor",
             "desc":[
-                "Un éditeur 3D basique qui permet de creer les formes de bases, de modifier leur taille, rotation et échelle.\nL'éditeur supporte aussi la création de plusieurs zones et de groupes pour gérer plusieurs objets en même temps."
+              "A simple 3D editor to create base 3D and 2D shapes, modify their scale, position and rotation.",
+              "This editor allows you to keep the shape separated in different independant zones and manage them in group to modify more than one shape at a time.",
+              "The project was done using C++ thanks to the Irrlicht library to handle the 3D."
             ],
             "link": "https://github.com/Aztyu/Editeur-3D",
             "image": "editeur3D",
@@ -13,11 +15,12 @@
             "category": "cpp"
         },
         {
-            "title": "Mon CV",
+            "title": "My Resume",
             "link": "https://github.com/Aztyu/PolymerCV",
             "image": "polymercv",
             "desc":[
-                "Test description"
+                "This website is my own website where I keep my resume up to date and have a small portfolio page, it allowed me to experiment freely with new technologies.",
+                "I used Polymer 1.0 which use web components to easily create this website, keeping it responsive and material design."
             ],
             "show": true,
             "category": "web"
@@ -27,7 +30,9 @@
             "link": "http://codeine10.science/",
             "image": "codeine10",
             "desc":[
-                "Tesdesx"
+                "Codeine10 was created with Wordpress for a school assignement about SEO optimization",
+                "The main focus was putting the site on a great position on search engines, not developing the best site.",
+                "In order to obtain the best results, we wrote interesting articles and tried to stay coherent with keywords."
             ],
             "show": true,
             "category": "seo"
@@ -37,27 +42,31 @@
           "link": "https://github.com/Aztyu/TodoJava",
           "image": "todolist",
           "desc":[
-              "Test ption"
+              "This Java program allows user to create task/bug and then comment on those items or close them",
+              "The user can easily use the program made in Java thanks to the interface created with Swing",
+              "I used a MySQL database to keep every user login and the different tasks/bugs"
           ],
           "show": true,
           "category": "java"
         },
         {
-            "title": "Gestionnaire de restaurant",
+            "title": "Restaurant manager",
             "link": "https://github.com/Jitrixis/2NET-Restaurant-Management-Software",
             "image": "restaurant",
             "desc":[
-                "Test ption"
+                "This program allows the user to manage a restaurant by adding/modifying/removing meals/waiters/tables in the main interface",
+                "C# with .Net was used to create it, the graphical interface was made in WPF and all the data was managed with Entity Framework and an underlying SQL Server"
             ],
             "show": true,
             "category": "csharp"
         },
         {
-            "title": "Gestionnaire de taxi",
+            "title": "Taxi company",
             "link": "https://github.com/Jitrixis/2NET-Restaurant-Management-Software",
             "image": "taxicsharp",
             "desc":[
-                "Test ption"
+                "This software allows the user to manage the driver and trip aspect of a taxi company",
+                "This C# program executes in a console and uses Entity Framework "
             ],
             "show": true,
             "category": "csharp"
@@ -67,7 +76,8 @@
             "link": "https://github.com/Aztyu/Retro_Breaker",
             "image": "retrobreaker",
             "desc":[
-                "Test ption"
+                "Retro breaker is a remake to the famous brick breaker 'Arkanoid' with a retro/neon look",
+                "On the technical level, I used the C language with the SDL library for the 2D graphics"
             ],
             "show": true,
             "category": "cpp"}

@@ -1,11 +1,10 @@
 {
-  "presentation": "Presentation",
+  "presentation": "Quick presentation",
   "situation": {
       "title": "Actual situation",
       "text":[
-        "Place holder",
-        "Place holder",
-        "Place holder"
+        "My name is Corentin BEAL, I'm currently studying computer programming and a little computer science in SUPINFO Lyon. I'm more interested in software and website development than system administration and I am currently looking for an internship to end my third year at Supinfo between the 1st July and the 31st October 2016.",
+        "I like to keep an eye on and experiment with new development language, library or framework and this is why I always try to keep a side project to work on along my usual school courses and assignments. You can find the majority of my work, either project or assignment, on my Github page."
       ]
     },
     "skill":{
@@ -21,12 +20,12 @@
                     },
                     {
                        "filter": "java",
-                       "text": "Java, bibliothèque Swing et développement Android",
+                       "text": "Java, Swing library and Android development",
                        "image": "java_fab"
                     },
                     {
                        "filter": "csharp",
-                       "text": "Langage C/C++, bibliothèque SDL et Irrlicht",
+                       "text": "C# language, WPF, LINQ and .NET platform",
                        "image": "csharp_fab"
                     }
                 ]
@@ -46,27 +45,27 @@
                     },
                     {
                        "filter": "web",
-                       "text": "Javascript",
+                       "text": "Javascript language",
                        "image": "js_fab"
                     },
                     {
                        "filter": "web",
-                       "text": "Bibliothèque JQuery",
+                       "text": "JQuery library",
                        "image": "jquery_fab"
                     },
                     {
                        "filter": "php",
-                       "text": "PHP 5.5, base de données MySQL",
+                       "text": "PHP 5.5, MySQL database",
                        "image": "php_fab"
                     },
                     {
                        "filter": "php",
-                       "text": "Framework Symfony 2",
+                       "text": "Symfony 2 Framework",
                        "image": "sf_fab"
                     },
                     {
                        "filter": "seo",
-                       "text": "Optimisation de moteur de recherche et Google Analytics",
+                       "text": "Search engine optimization and Google Analytics usage",
                        "image": "analytics_fab"
                     }
                 ]
@@ -76,12 +75,12 @@
                 "item": [
                     {
                        "filter": "none",
-                       "text": "Utilisation et configuration de systèmes Linux",
+                       "text": "Configuration and usage of the Linux systems",
                        "image": "linux_fab"
                     },
                     {
                        "filter": "none",
-                       "text": "Configuration de réseaux locaux et de routeur (langage IOS Cisco)",
+                       "text": "Basic Cisco switch/router setup and configuration",
                        "image": "cisco_fab"
                     }
                 ]
@@ -91,12 +90,17 @@
                 "item": [
                     {
                        "filter": "none",
-                       "text": "Anglais lu, écrit, parlé (niveau B1 certifié CAMBRIDGE)",
+                       "text": "Native speaker",
+                       "image": "french_circle"
+                    },
+                    {
+                       "filter": "none",
+                       "text": "Professional working proficiency (ILR), certified B2 Cambridge",
                        "image": "english_circle"
                     },
                     {
                        "filter": "none",
-                       "text": "Configuration de réseaux locaux et de routeur (langage IOS Cisco)",
+                       "text": "Elementary proficiency (ILR)",
                        "image": "german_circle"
                     }
                 ]
@@ -106,17 +110,17 @@
                 "item": [
                     {
                        "filter": "cpp",
-                       "text": "Experimenté sur l'IDE Netbeans pour le C++ ou le Java",
+                       "text": "Advanced usage of Netbeans IDE for C/C++ and Java development",
                        "image": "netbeans_fab"
                     },
                     {
                        "filter": "cpp",
-                       "text": "Experimenté sur la suite Jetbrains (WebStorm, PyCharm, ...)",
+                       "text": "Basic usage of the Jetbrains suite (WebStorm, PyCharm, ...)",
                        "image": "jb_fab"
                     },
                     {
                        "filter": "git",
-                       "text": "Outil de versionnement Git ou Mercurial",
+                       "text": "Experimented with Git and Mercurial version control systems",
                        "image": "git_fab"
                     }
                 ]
@@ -131,10 +135,10 @@
                 "src":"http://www.supinfo.com/",
                 "image":"supinfo",
                 "cursus": "Licence Informatique",
-                "date":"En cours",
+                "date":"Now",
                 "description": [
-                    "SUPINFO est une formation informatique générale, allant du développement au sys-dév",
-                    "Test 2 lignes"
+                    " I started Supinfo in 2013 and I achieved the second year of my bachelor degree this year. During those years I had the opportunity to learn algorithmic and programming with a large variety of language, platform and pattern (OOP, test-driven, ...)",
+                    " I was also introduced to system administration with Cisco technologies, Linux platform and basic Microsoft Server configuration."
                 ]
             },
             {
@@ -144,7 +148,8 @@
                 "cursus": "Baccalauréat S-SVT",
                 "date":"2013",
                 "description": [
-                    "Bac S obtenu à l'ESCY avec option européenne et mention bien."
+                    " I graduated from french high-school, Lycée, and obtained my Baccalauréat S with honor in 2013. The Baccalauréat is the french diploma that ends high school, the 'S' stands for scientific and means that this streams is focused toward scientific subject as biology, chemistry , physics.",
+                    " I also took an european option that allowed me to travel to England and Germany but also to take history classes in english."
                 ]
             }
         ]
@@ -160,13 +165,12 @@
                     "longitude":4.3113186,
                     "latitude":45.3314691
                 },
-                "position":"Développeur/Testeur",
-                "date":"01/07/2014 au 31/10/2014",
+                "position":"Software Developer/Tester",
+                "date":"07/01/2014 to 10/31/2014",
                 "description": [
-                    "Découverte de certains aspects du développement informatique tel que les langages C++ et Java (Swing), le test de logiciel et la méthode AGILE.",
-                    "Travail sur des améliorations dans l’interface du logiciel développé par Mu-Test en Java aidé de la bibliothèque Swing.",
-                    "Apport de modifications sur la partie C++ du logicel qui expose une API au client et communique avec les machines.",
-                    "Initiation à la fonction de testeur en effectuant des campagnes de test fonctionnel via Testlink sur les releases du logiciel Mu-Test et du report de bugs via Redmine."
+                    " I took an internship last year at MuTest, a company that designs and produces automated tester for electronic component as flash memory or RAM. I worked on the software used by the customers to interact with the testers.",
+                    " During my first internship I was in charge of regression testing the release before sending them to the customers. On the software part, I added an easy and custom export/import function from/to CSV to an already existing C++ API and improved the test time tracking mechanism in the core C++ application. I modified an existing tool to simplify debugging test program, created by customer, on the graphical side developed in Java with the Swing library.",
+                    " For my second internship, I have been assigned the task to add a new debug tool to the existing ones in the Java interface. The main focus is to allow customers to easily see the values directly from the tester in a user friendly way to allow them to figure out if their program worked as they intended or better understand the tested component."
                 ]
             },
             {
@@ -177,10 +181,10 @@
                     "longitude":4.319112,
                     "latitude":45.180424
                 },
-                "position":"Conditionneur",
-                "date":"01/08/2013 au 31/10/2013",
+                "position":"Packer",
+                "date":"08/01/2013 to 10/31/2013",
                 "description": [
-                    "Surveillance et relève sur des machines de production de rubans textiles."
+                    " I worked at Oriol & Fontanel, a ribbon manufacturer, as a summer job that was not related to my field of study. I was in charge of monitoring the ribbon making machine and picking up the production to pass it on the next manufacturing steps."
                 ]
             },
             {
@@ -191,10 +195,10 @@
                     "longitude":4.2501715,
                     "latitude":45.2526937
                 },
-                "position":"Conditionneur",
-                "date":"01/07/2013 au 31/07/2013",
+                "position":"Packer",
+                "date":"07/01/2013 to 07/31/2013",
                 "description": [
-                    "Travail en tant qu'ouvrier sur des machines de production de sac et matériaux plastiques."
+                    " I worked at Granger as a packer. I monitored the plastic producing machines and packed the produced bags or plastic films."
                 ]
             }
         ]
@@ -204,25 +208,27 @@
         "hobbie":[
             {
                 "description":[
-                    "Voyages en immersion aux USA (Chicago) pendant 1 mois en mars 2012 ..."
-                ],
-                "image": "chicago"
-            },
-            {
-                "description":[
-                    "et en Allemagne (Munich) pendant 2 semaines en Décembre 2011."
+                    "I like to travel and discover new cultures. I went 3 weeks in Germany near Munich as an exchange student to study and share the life of my german pen pal in December 2011. I attended the same courses as him and even discovered the famous german Christmas markets."
                 ],
                 "image": "munich"
             },
             {
                 "description":[
-                    "Les innovations logicielles : Polymer 1.0, Android L, Windows 10"
+                    "In March 2012, I took part in another exchange program with an american student in Chicago, USA. I spent 3 weeks attending courses and living in with my american student's family, I even visited downtown Chicago during weekends."
+                ],
+                "image": "chicago"
+            },
+            {
+                "description":[
+                    "I already said in the quick description that I follow software and platform innovation but to be more precise, I like the novelty aspect of them and the new opportunity that they bring.",
+                    "I think Polymer 1.0 is a forestate for the future web by using web components and I am very eager to experiemnt with new platform on mobile, Android L/M, or desktop with Windows 10"
                 ],
                 "image": "polymer"
             },
             {
                 "description":[
-                    "Les innovations matérielles : IoT (Internet of Things), wearables, SSD"
+                    "As I said in my quick description I like software innovation but I follow the hardware ones too. I am particularly interested in wearables technologies like Android Wear and the possibilities it brings.",
+                    "I also like to pay attention to the quick evolution of virtual reality and more widely used technologies as SSD or processors (x86 and ARM)."
                 ],
                 "image": "wear"
             }
