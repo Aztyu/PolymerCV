@@ -167,7 +167,65 @@
                     "Apport de modifications sur la partie C++ du logicel qui expose une API au client et communique avec les machines.",
                     "Initiation à la fonction de testeur en effectuant des campagnes de test fonctionnel via Testlink sur les releases du logiciel Mu-Test et du report de bugs via Redmine."
                 ]
+            },
+            {
+                "company":"ORIOL-FONTANEL",
+                "src":"http://www.oriol-fontanel.fr/",
+                "image":"oriol",
+                "localization": {
+                    "longitude":4.319112,
+                    "latitude":45.180424
+                },
+                "position":"Conditionneur",
+                "date":"01/08/2013 au 31/10/2013",
+                "description": [
+                    "Surveillance et relève sur des machines de production de rubans textiles."
+                ]
+            },
+            {
+                "company":"GRANGER",
+                "src":"http://www.grangergroup.fr/",
+                "image":"granger",
+                "localization": {
+                    "longitude":4.2501715,
+                    "latitude":45.2526937
+                },
+                "position":"Conditionneur",
+                "date":"01/07/2013 au 31/07/2013",
+                "description": [
+                    "Travail en tant qu&#39;ouvrier sur des machines de production de sac et matériaux plastiques."
+                ]
             }
+        ]
+    },
+    "hobbies": {
+        "title": "Actual situation",
+        "hobbie":[
+            {
+                "description":[
+                    "Voyages en immersion aux USA (Chicago) pendant 1 mois en mars 2012 ..."
+                ],
+                "image": "chicago"
+            },
+            {
+                "description":[
+                    "et en Allemagne (Munich) pendant 2 semaines en Décembre 2011."
+                ],
+                "image": "munich"
+            },
+            {
+                "description":[
+                    "Les innovations logicielles : Polymer 1.0, Android L, Windows 10"
+                ],
+                "image": "polymer"
+            },
+            {
+                "description":[
+                    "Les innovations matérielles : IoT (Internet of Things), wearables, SSD"
+                ],
+                "image": "wear"
+            }
+
         ]
     }
 }
