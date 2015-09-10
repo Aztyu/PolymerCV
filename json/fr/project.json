@@ -1,0 +1,75 @@
+{
+    "filter": "Filters :",
+    "linktext": "Accéder au projet",
+    "projects":[
+        {
+            "title": "Editeur 3D",
+            "desc":[
+                "Un éditeur 3D basique qui permet de creer les formes de bases, de modifier leur taille, rotation et échelle.\nL'éditeur supporte aussi la création de plusieurs zones et de groupes pour gérer plusieurs objets en même temps."
+            ],
+            "link": "https://github.com/Aztyu/Editeur-3D",
+            "image": "editeur3D",
+            "show": true,
+            "category": "cpp"
+        },
+        {
+            "title": "Mon CV",
+            "link": "https://github.com/Aztyu/PolymerCV",
+            "image": "polymercv",
+            "desc":[
+                "Test description"
+            ],
+            "show": true,
+            "category": "web"
+        },
+        {
+            "title": "Codeine10",
+            "link": "http://codeine10.science/",
+            "image": "codeine10",
+            "desc":[
+                "Tesdesx"
+            ],
+            "show": true,
+            "category": "seo"
+        },
+        {
+          "title": "Todo list",
+          "link": "https://github.com/Aztyu/TodoJava",
+          "image": "todolist",
+          "desc":[
+              "Test ption"
+          ],
+          "show": true,
+          "category": "java"
+        },
+        {
+            "title": "Gestionnaire de restaurant",
+            "link": "https://github.com/Jitrixis/2NET-Restaurant-Management-Software",
+            "image": "restaurant",
+            "desc":[
+                "Test ption"
+            ],
+            "show": true,
+            "category": "csharp"
+        },
+        {
+            "title": "Gestionnaire de taxi",
+            "link": "https://github.com/Jitrixis/2NET-Restaurant-Management-Software",
+            "image": "taxicsharp",
+            "desc":[
+                "Test ption"
+            ],
+            "show": true,
+            "category": "csharp"
+        },
+        {
+            "title": "Retro breaker",
+            "link": "https://github.com/Aztyu/Retro_Breaker",
+            "image": "retrobreaker",
+            "desc":[
+                "Test ption"
+            ],
+            "show": true,
+            "category": "cpp"}
+    ]
+}

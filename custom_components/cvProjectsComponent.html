@@ -43,7 +43,13 @@
     </style>
 
     <template>
-        <p class="blue">Filtres :</p>
+      <iron-ajax
+              id="projectrequest"
+              url="{{ajaxurl}}"
+              handle-as="json"
+              last-response="{{resource}}"></iron-ajax>
+
+        <p class="blue">{{resource.filter}}</p>
         <div class="boxes">
             <template is="dom-repeat" items="{{categories}}" as="category" observe="show">
                 <paper-checkbox on-iron-change="checkboxChanged" checked="{{category.show}}">{{category.text}}</paper-checkbox>
@@ -51,8 +57,8 @@
         </div>
 
         <div class="wrapper">
-            <template is="dom-repeat" items="{{dataProject}}" as="data" filter="filtre" observe="show">
-                <cv-project-component desc={{data.desc}} git_link={{data.link}} image={{data.image}} title={{data.title}} desc={{data.desc}}></cv-project-component>
+            <template is="dom-repeat" items="{{resource.projects}}" as="data" filter="filtre" observe="show">
+                <cv-project-component desc={{data.desc}} linktext="{{resource.linktext}}" gitlink={{data.link}} image={{data.image}} title={{data.title}} desc={{data.desc}}></cv-project-component>
             </template>
         </div>
 
@@ -66,8 +72,10 @@
         is: "cv-projects-component",
 
         properties: {
-            description: Array,
-            dataProject: Array,
+            resource:{
+              type: Object,
+              notify: true
+            },
             categories:{
                 type: Array,
                 value:[
@@ -79,25 +87,55 @@
                 ],
                 notify: true,
                 observer: 'showchanged'
+            },
+            language:{
+              type: String,
+              notify: true,
+              observer: "languageChanged"
+            },
+            ajaxurl:{
+                type: String,
+                value: "json/fr/home.json"
             }
+        },
+
+        ready: function(){
+            this.$.projectrequest.generateRequest();
+        },
+
+        languageChanged: function(){
+            console.log(this.language);
+            if(this.language === "english"){
+                console.log("english");
+                this.set('ajaxurl', "json/en/project.json");
+                this.$.projectrequest.generateRequest();
+            }else if(this.language === "french"){
+                console.log("french");
+                this.set('ajaxurl', "json/fr/project.json");
+                this.$.projectrequest.generateRequest();
+            }
+            console.log(this.resource);
         },
 
         updateCategoryFromCheckbox: function(category, show){
-          if(this.dataProject !== undefined){
-            for(var i = 0; i<this.dataProject.length; i++) {
-                if (this.dataProject[i].category == category) {
-                    this.set('dataProject.' + i + '.show', show);
+            if(this.resource.projects !== undefined){
+                for(var i = 0; i<this.resource.projects.length; i++) {
+                    if (this.resource.projects[i].category == category) {
+                        this.set('resource.projects.' + i + '.show', show);
+                    }
                 }
             }
-          }
         },
 
         updateCategory: function(category, show){
-          if(this.dataProject !== undefined){
-            for(var i = 0; i<this.dataProject.length; i++) {
-                if(this.categories[i] !== undefined){
-                    if (this.categories[i].category == category) {
-                        this.set('categories.' + i + '.show', show);
+          if(this.resource !== undefined){
+            console.log("1");
+            for(var i = 0; i<this.resource.projects.length; i++) {
+              console.log("2");
+                if(this.resource.projects[i] !== undefined){
+                  console.log("3");
+                    if (this.resource.projects[i].category == category) {
+                        this.set('resource.projects.' + i + '.show', show);
                     }
                 }
             }
