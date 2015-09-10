@@ -157,17 +157,13 @@
         },
 
         languageChanged: function(){
-          console.log(this.language);
           if(this.language === "english"){
-              console.log("english");
               this.set('ajaxurl', "json/en/home.json");
               this.$.homerequest.generateRequest();
           }else if(this.language === "french"){
-              console.log("french");
               this.set('ajaxurl', "json/fr/home.json");
               this.$.homerequest.generateRequest();
           }
-          console.log(this.resource);
         },
 
         clickFilter: function(e) {
