@@ -137,7 +137,7 @@
                 value: 0,
                 notify: true
             },
-            data:{
+            categories:{
                 type: Array,
                 notify: true
             },
@@ -168,14 +168,13 @@
 
         clickFilter: function(e) {
             this.clickselected = 1;
-            var target = e.target;
-            var parent = findParentBySelector(target, "cv-icon-component");
-            var category = parent.attributes[0].value;
-            for(var i = 0; i<this.data.length; i++){
-                if(this.data[i].category == category){
-                    this.set('data.' + i + '.show', true);
+            var model = e.model;
+            var category = model.__data__.item.filter;
+            for(var i = 0; i<this.categories.length; i++){
+                if(this.categories[i].category == category){
+                    this.set('categories.' + i + '.show', true);
                 }else{
-                    this.set('data.' + i + '.show', false);
+                    this.set('categories.' + i + '.show', false);
                 }
             }
         }

@@ -73,10 +73,10 @@
                 <div class="horizontal layout center">
                     <h1 class="flex">{{resource.title}}</h1>
                     <div class="flag">
-                        <img id="french_flag" src="../images/french_flag.png" on-click="test"></img>
+                        <img id="french_flag" src="../images/french_flag.png" on-click="changeLanguage"></img>
                     </div>
                     <div class="flag">
-                        <img id="english_flag" src="../images/english_flag_off.png" on-click="test"></img>
+                        <img id="english_flag" src="../images/english_flag_off.png" on-click="changeLanguage"></img>
                     </div>
                 </div>
                 <paper-tabs selected="{{selected}}">
@@ -95,11 +95,11 @@
         <neon-animated-pages class="flex" id="pages" selected="{{selected}}" entry-animation="{{entry}}" exit-animation="{{exit}}">
             <neon-animatable>
                 <div main>
-                    <cv-home-component language="{{language}}" clickselected="{{selected}}" data="{{projects}}"></cv-home-component>
+                    <cv-home-component language="{{language}}" clickselected="{{selected}}" categories="{{categories}}"></cv-home-component>
                 </div>
             </neon-animatable>
             <neon-animatable>
-                    <cv-projects-component language="{{language}}" class="vertical"></cv-projects-component>
+                    <cv-projects-component categories={{categories}} language="{{language}}" class="vertical"></cv-projects-component>
             </neon-animatable>
             <neon-animatable>
                 <div main>
@@ -125,13 +125,6 @@
                 notify: true,
                 observer: 'selectChanged'
             },
-            projects:{
-                type: Object,
-                value: [
-                    {title: "Editeur 3d", desc:["Un éditeur 3D basique qui permet de créer les formes de bases, de modifier leur taille, leur rotation et leur échelle.", "L'éditeur supporte aussi la création de plusieurs zones et de groupes pour gérer plusieurs objets en même temps.","Ce projet a été réaliser en C++ grâce à la bibliothèque Irrlicht"], link: "https://github.com/Aztyu/Editeur-3D", image: "editeur3D", show: true, category: "cpp"},
-                ],
-                notify: true
-            },
             languages:{
                 type: Object,
                 value:{
@@ -151,6 +144,17 @@
               type: String,
               value: "french",
               notify: true
+            },
+            categories:{
+                type: Array,
+                value:[
+                    {text: "C/C++", category: "cpp", show: true},
+                    {text: "Java", category: "java", show: true},
+                    {text: "Web", category: "web", show: true},
+                    {text: "C#", category: "csharp", show: true},
+                    {text: "SEO", category: "seo", show: true}
+                ],
+                notify: true
             }
         },
 
@@ -174,7 +178,7 @@
             }
         },
 
-        test: function(language){
+        changeLanguage: function(language){
             element = language.srcElement;
             id = element.getAttribute("id");
             switch(id){
