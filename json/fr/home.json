@@ -4,9 +4,9 @@
   "situation": {
       "title": "Situation actuelle",
       "text":[
-        "Actuellement étudiant en informatique à SUPINFO Lyon en 2ème année.",
-        "En recherche d’un stage à temps partiel 2 jours par semaine (jeudi et vendredi) pour ma 3ème année à SUPINFO de Novembre 2015 à juin 2016).",
-        "Je reste disponible par mail pour toutes questions."
+        "Je m'appelle Corentin BEAL, j'étudie actuellement le dévelopement informatique à SUPINFO Lyon depuis 2 ans. Je suis plus orienté vers le dévelopement web et applicatif mais je posséde quelques bases en gestion de serveur",
+        "J'aime me tenir informé des nouveaux frameworks et nouveautés concernant les langages existants, afin d'appliquer ces nouveautés je garde toujours un projet en parallèle de mes cours sur lequel je peux m'améliorer sur les technologies de mn choix. Vous pouvez d'ailleurs retrouver tous mes projets, cadre personnel et scolaire sur ma page Github",
+        "Je suis actuellement à la recherche d'un stage à temps partiel pour les jeudis et vendredis pendant la période d'Octobre 2015 à Juin 2016 ainsi qu'un stage à temps plein de Juillet 2016 à Octobre 2016."
       ]
     },
     "skill":{
@@ -134,7 +134,8 @@
                 "cursus": "Licence Informatique",
                 "date":"En cours",
                 "description": [
-                    "SUPINFO est une formation informatique générale, allant du développement au sys-dév"
+                    "J'ai intégré SUPINFO ,une formation informatique générale, en 2013. Je viens d'achever ma deuxième année durant laquelle j'ai consolidé les bases d'algorithmique et de programation acquises au cours de la première année.",
+                    "J'ai pu apprendre à maitriser les bases des langages orientés objets les plus populaires tel que le C++, le Java et le C#. J'ai aussi découvert le milieu de l'administration système sur les plateforme Linux ou Windows Server."
                 ]
             },
             {
@@ -144,7 +145,8 @@
                 "cursus": "Baccalauréat S-SVT",
                 "date":"2013",
                 "description": [
-                    "Bac S obtenu à l'ESCY avec option européenne et mention bien."
+                    "J'ai obtenu mon baccalauréat S spécialité Physique-Chimie avec mention BIEN en 2013 à l'ESCY.",
+                    "De plus j'ai pris part à une option europèene au cours de mes années de lycée qui m'a permis de découvrir le Royaume-Uni et l'Allemagne via des voyages et des cours sur les cultures de ces pays."
                 ]
             }
         ]
@@ -163,10 +165,10 @@
                 "position":"Développeur/Testeur",
                 "date":"01/07/2014 au 31/10/2014",
                 "description": [
-                    "Découverte de certains aspects du développement informatique tel que les langages C++ et Java (Swing), le test de logiciel et la méthode AGILE.",
-                    "Travail sur des améliorations dans l’interface du logiciel développé par Mu-Test en Java aidé de la bibliothèque Swing.",
-                    "Apport de modifications sur la partie C++ du logicel qui expose une API au client et communique avec les machines.",
-                    "Initiation à la fonction de testeur en effectuant des campagnes de test fonctionnel via Testlink sur les releases du logiciel Mu-Test et du report de bugs via Redmine."
+                    "Mu-Test est une start-up dans le domaine des machines de tests automatisés de composants électroniques.",
+                    "Durant ce stage j'ai eu l'occasion de découvrir le métier de développeur au sein d'une start-up qui utilise la méthode AGILE. Au niveau technique j'ai travaillé en Java avec la bibliothèque Swing ainsi que le C++",
+                    "J'ai pu développer plusieurs améliorations et ajouts à l'interface graphique en Java ainsi qu'à la partie C++ qui communique directement avec les testeurs.",
+                    "J'ai aussi pu découvrir et mieux comprendre la fonction de testeur en effectuant des campagnes de test fonctionnel via Testlink sur les releases du logiciel Mu-Test et du report de bugs via Redmine."
                 ]
             },
             {
@@ -200,7 +202,7 @@
         ]
     },
     "hobbies": {
-        "title": "Actual situation",
+        "title": "Centres d'intérêt",
         "hobbie":[
             {
                 "description":[
