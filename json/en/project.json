@@ -11,7 +11,6 @@
             ],
             "link": "https://github.com/Aztyu/Editeur-3D",
             "image": "editeur3D",
-            "show": true,
             "category": "cpp"
         },
         {
@@ -22,7 +21,6 @@
                 "This website is my own website where I keep my resume up to date and have a small portfolio page, it allowed me to experiment freely with new technologies.",
                 "I used Polymer 1.0 which use web components to easily create this website, keeping it responsive and material design."
             ],
-            "show": true,
             "category": "web"
         },
         {
@@ -34,7 +32,6 @@
                 "The main focus was putting the site on a great position on search engines, not developing the best site.",
                 "In order to obtain the best results, we wrote interesting articles and tried to stay coherent with keywords."
             ],
-            "show": true,
             "category": "seo"
         },
         {
@@ -46,7 +43,6 @@
               "The user can easily use the program made in Java thanks to the interface created with Swing.",
               "I used a MySQL database to keep every user login and the different tasks/bugs."
           ],
-          "show": true,
           "category": "java"
         },
         {
@@ -57,7 +53,6 @@
                 "This program allows the user to manage a restaurant by adding/modifying/removing meals/waiters/tables in the main interface.",
                 "C# with .Net was used to create it, the graphical interface was made in WPF and all the data was managed with Entity Framework and an underlying SQL Server."
             ],
-            "show": true,
             "category": "csharp"
         },
         {
@@ -68,7 +63,6 @@
                 "This software allows the user to manage the driver and trip aspect of a taxi company.",
                 "This C# program executes in a console and uses Entity Framework."
             ],
-            "show": true,
             "category": "csharp"
         },
         {
@@ -79,7 +73,6 @@
                 "Retro breaker is a remake to the famous brick breaker 'Arkanoid' with a retro/neon look.",
                 "On the technical level, I used the C language with the SDL library for the 2D graphics."
             ],
-            "show": true,
             "category": "cpp"}
     ]
 }

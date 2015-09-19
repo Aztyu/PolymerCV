@@ -84,7 +84,6 @@
             },
             categories:{
                 type: Array,
-                observer: 'showchanged'
             },
             language:{
               type: String,
@@ -115,37 +114,20 @@
             if(this.resource.projects !== undefined){
                 for(var i = 0; i<this.resource.projects.length; i++) {
                     if (this.resource.projects[i].category == category) {
+                      console.log("setu");
                         this.set('resource.projects.' + i + '.show', show);
                     }
                 }
             }
-        },
-
-        updateCategory: function(category, show){
-          if(this.resource !== undefined){
-            for(var i = 0; i<this.resource.projects.length; i++) {
-                if(this.resource.projects[i] !== undefined){
-                    if (this.resource.projects[i].category == category) {
-                        this.set('resource.projects.' + i + '.show', show);
-                    }
-                }
-            }
-          }
         },
 
         filtre: function(item){
             for(var i = 0; i<this.categories.length; i++) {
-                if (this.categories[i].category == item.category && this.categories[i].show != item.show) {
-                    this.set('categories.' + i + '.show', item.show);
+                if (this.categories[i].category == item.category){
+                    return this.categories[i].show == true;
                 }
             }
-            return item.show;
-        },
-
-        showchanged: function(item){
-            for(var i=0; i<item.length; i++){
-                this.updateCategory(item[i].category, item[i].show);
-            }
+            return false;
         },
 
         checkboxChanged: function(item) {

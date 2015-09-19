@@ -11,7 +11,6 @@
             ],
             "link": "https://github.com/Aztyu/Editeur-3D",
             "image": "editeur3D",
-            "show": true,
             "category": "cpp"
         },
         {
@@ -22,7 +21,6 @@
                 "Il s'agit de mon site personnel qui a pour but de servir de CV et portfolio tout en me permettant d'expérimenter de nouvelles technologies.",
                 "J'ai utiliser la technologie Polymer de Google, basé sur les web components, afin d'obtenir un site responsive et material design."
             ],
-            "show": true,
             "category": "web"
         },
         {
@@ -33,7 +31,6 @@
                 "Ce site Wordpress a été crée dans le cadre d'un projet SUPINFO sur l'optimisation de site Web.",
                 "Le but était de placer le site en bonne position sur les moteurs de recherche grâce à diverses techniques et un bon contenu."
             ],
-            "show": true,
             "category": "seo"
         },
         {
@@ -44,7 +41,6 @@
               "Ce programme permet de se connecter et de créer des tâches, il est ensuite possible de commenter ces tâches ou de les fermer.",
               "Le programme a été entièrement réaliser en Java avec Swing pour l'interface et une base de données MySQL pour sauvegarder les données."
           ],
-          "show": true,
           "category": "java"
         },
         {
@@ -55,7 +51,6 @@
                 "Un logiciel qui permet de gérer un restaurant en ajoutant des repas et serveurs puis de les assigner aux tables.",
                 "Le C# a été utilisé pour créer le programme en WPF et LINQ pour gérer la liaison avec la base de donnée."
             ],
-            "show": true,
             "category": "csharp"
         },
         {
@@ -66,7 +61,6 @@
                 "Un logiciel qui permet de gérer une compagnie de taxi en ajoutant des chauffeurs et trajets.",
                 "Le programme s'exécute en mode console et a été programmé en C#."
             ],
-            "show": true,
             "category": "csharp"
         },
         {
@@ -77,7 +71,6 @@
               "Retro breaker est un remake du célébre jeu de casse-brique avec un look rétro/néon.",
               "Au niveau technique, le C a été utilisé avec la bibliothèque SDL pour l'affichage."
             ],
-            "show": true,
             "category": "cpp"}
     ]
 }
