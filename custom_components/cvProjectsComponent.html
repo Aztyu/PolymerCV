@@ -121,9 +121,11 @@
         },
 
         filter: function(item){   //Tells repeat template which category of project to show
-            for(var i = 0; i<this.categories.length; i++) {
-                if (this.categories[i].category == item.category){
-                    return this.categories[i].show == true;
+            if(this.categories !== undefined){
+                for(var i = 0; i<this.categories.length; i++) {
+                    if (this.categories[i].category == item.category){
+                        return this.categories[i].show == true;
+                    }
                 }
             }
             return false;

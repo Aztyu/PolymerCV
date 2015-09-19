@@ -160,7 +160,7 @@
         },
 
         clickFilter: function(e) {
-            this.clickselected = 1;   //Select project tab
+            this.set("clickselected", 1);   //Select project tab
             var model = e.model;
             var category = model.__data__.item.filter;    //Get the filter form template model
             for(var i = 0; i<this.categories.length; i++){
