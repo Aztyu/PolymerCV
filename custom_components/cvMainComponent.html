@@ -176,7 +176,7 @@
         },
 
         selectChanged: function(newValue, oldValue) {
-            if(newValue == 0){
+            if(newValue == 0){                          //Change animation based on previous and next selected, bugs to change
                 this.entry = 'slide-from-right-animation';
                 this.exit = 'slide-left-animation';
             }else if(newValue == 2){
@@ -194,7 +194,7 @@
         changeLanguage: function(language){
             element = language.srcElement;
             id = element.getAttribute("id");
-            switch(id){
+            switch(id){                     //based on flag selected change flag source and data, send update to child elements via data bindings
                 case 'french_flag':
                     enabled = this.languages.french.enabled;
                     other = this.$.english_flag;

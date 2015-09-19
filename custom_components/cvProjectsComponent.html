@@ -58,12 +58,12 @@
         <p class="blue">{{resource.filter}}</p>
         <div class="boxes">
             <template is="dom-repeat" items="{{categories}}" as="category" observe="show">
-                <paper-checkbox on-iron-change="checkboxChanged" checked="{{category.show}}">{{category.text}}</paper-checkbox>
+                <paper-checkbox on-iron-change="checkboxChanged" checked="{{category.show}}" category="{{category.category}}">{{category.text}}</paper-checkbox>
             </template>
         </div>
 
         <div class="wrapper">
-            <template is="dom-repeat" items="{{resource.projects}}" as="data" filter="filtre" observe="show">
+            <template is="dom-repeat" items="{{resource.projects}}" as="data" filter="filter" observe="show">
                 <cv-project-component desc={{data.desc}} linktext="{{resource.linktext}}" gitlink={{data.link}} image={{data.image}} title={{data.title}} desc={{data.desc}}></cv-project-component>
             </template>
         </div>
@@ -101,7 +101,7 @@
         },
 
         languageChanged: function(){
-            if(this.language === "english"){
+            if(this.language === "english"){    //Check whichi language to use in ajax loading
                 this.set('ajaxurl', "json/en/project.json");
                 this.$.projectrequest.generateRequest();
             }else if(this.language === "french"){
@@ -112,16 +112,15 @@
 
         updateCategoryFromCheckbox: function(category, show){
             if(this.resource.projects !== undefined){
-                for(var i = 0; i<this.resource.projects.length; i++) {
+                for(var i = 0; i<this.resource.projects.length; i++) {    //Parses every project in resource and update show status if needed
                     if (this.resource.projects[i].category == category) {
-                      console.log("setu");
-                        this.set('resource.projects.' + i + '.show', show);
+                        this.set('resource.projects.' + i + '.show', show);   //This sets show to the new value and force repeat template to update thanks to observe
                     }
                 }
             }
         },
 
-        filtre: function(item){
+        filter: function(item){   //Tells repeat template which category of project to show
             for(var i = 0; i<this.categories.length; i++) {
                 if (this.categories[i].category == item.category){
                     return this.categories[i].show == true;
@@ -131,13 +130,16 @@
         },
 
         checkboxChanged: function(item) {
-            category = item.target.innerText;
-            while (category.charAt(0) == ' ') {
-                category = category.substr(1);
+            var category_obj = item.model.__data__.category;
+            if(category_obj !== undefined){
+                var category = category_obj.category;
             }
-            for(var i=0; i<this.categories.length; i++){
-                if(this.categories[i].text == category){
-                    this.updateCategoryFromCheckbox(this.categories[i].category, this.categories[i].show);
+
+            if(category !== undefined){
+                for(var i=0; i<this.categories.length; i++){
+                    if(this.categories[i].category == category){    //Sends update to the projects list
+                        this.updateCategoryFromCheckbox(this.categories[i].category, this.categories[i].show);
+                    }
                 }
             }
         }
