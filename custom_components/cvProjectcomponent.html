@@ -9,8 +9,6 @@
     <style>
         paper-fab{
         @apply(--shadow-elevation-4dp);
-            min-height: 48px;
-            min-width: 48px;
             --paper-fab-background: black;
         }
 
@@ -62,7 +60,7 @@
             </template>
             <a href="{{gitlink}}" target="_blank">
                 <div class="git_down">
-                    <paper-fab icon="input" mini="true"></paper-fab>
+                    <paper-fab class="self-center" icon="input" mini="true"></paper-fab>
                     <p>{{linktext}}</p>
                 </div>
             </a>

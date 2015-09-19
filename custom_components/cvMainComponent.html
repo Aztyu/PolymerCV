@@ -15,15 +15,10 @@
         @apply(--layout-vertical);
         }
 
-        paper-tab{
-            font-size: 1.2em;
-        }
-
         paper-header-panel div{
             background-color: #1565C0;
             padding-top: 10px;
             width: auto;
-
             font-weight: 300;
             color: white;
         }
@@ -44,6 +39,7 @@
             width: 50%;
             min-width: 550px;
             margin: auto;
+            font-size: 1.2em;
         }
 
         p{
@@ -59,6 +55,23 @@
         .flag img{
             max-width: 42px;
         @apply(--shadow-elevation-4dp);
+        }
+
+        @media only screen and (max-width: 1080px){
+            paper-tabs{
+                width: 100%;
+                height: 100px;
+                font-size: 1.8em;
+            }
+
+            .paper-title{
+                padding: 16px 16px 16px 16px;
+            }
+
+            .flag img{
+                max-width: 96px;
+            @apply(--shadow-elevation-4dp);
+            }
         }
     </style>
 
@@ -81,13 +94,13 @@
                 </div>
                 <paper-tabs selected="{{selected}}">
                     <paper-tab>
-                        <div>{{resource.home}}</div>
+                        <div class="paper-title">{{resource.home}}</div>
                     </paper-tab>
                     <paper-tab>
-                        <div>{{resource.project}}</div>
+                        <div class="paper-title">{{resource.project}}</div>
                     </paper-tab>
                     <paper-tab>
-                        <div>{{resource.document}}</div>
+                        <div class="paper-title">{{resource.document}}</div>
                     </paper-tab>
                 </paper-tabs>
             </div>

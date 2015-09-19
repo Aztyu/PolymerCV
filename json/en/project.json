@@ -30,7 +30,7 @@
             "link": "http://codeine10.science/",
             "image": "codeine10",
             "desc":[
-                "Codeine10 was created with Wordpress for a school assignement about SEO optimization",
+                "Codeine10 was created with Wordpress for a school assignement about SEO optimization.",
                 "The main focus was putting the site on a great position on search engines, not developing the best site.",
                 "In order to obtain the best results, we wrote interesting articles and tried to stay coherent with keywords."
             ],
@@ -42,9 +42,9 @@
           "link": "https://github.com/Aztyu/TodoJava",
           "image": "todolist",
           "desc":[
-              "This Java program allows user to create task/bug and then comment on those items or close them",
-              "The user can easily use the program made in Java thanks to the interface created with Swing",
-              "I used a MySQL database to keep every user login and the different tasks/bugs"
+              "This Java program allows user to create task/bug and then comment on those items or close them.",
+              "The user can easily use the program made in Java thanks to the interface created with Swing.",
+              "I used a MySQL database to keep every user login and the different tasks/bugs."
           ],
           "show": true,
           "category": "java"
@@ -54,8 +54,8 @@
             "link": "https://github.com/Jitrixis/2NET-Restaurant-Management-Software",
             "image": "restaurant",
             "desc":[
-                "This program allows the user to manage a restaurant by adding/modifying/removing meals/waiters/tables in the main interface",
-                "C# with .Net was used to create it, the graphical interface was made in WPF and all the data was managed with Entity Framework and an underlying SQL Server"
+                "This program allows the user to manage a restaurant by adding/modifying/removing meals/waiters/tables in the main interface.",
+                "C# with .Net was used to create it, the graphical interface was made in WPF and all the data was managed with Entity Framework and an underlying SQL Server."
             ],
             "show": true,
             "category": "csharp"
@@ -65,8 +65,8 @@
             "link": "https://github.com/Jitrixis/2NET-Restaurant-Management-Software",
             "image": "taxicsharp",
             "desc":[
-                "This software allows the user to manage the driver and trip aspect of a taxi company",
-                "This C# program executes in a console and uses Entity Framework "
+                "This software allows the user to manage the driver and trip aspect of a taxi company.",
+                "This C# program executes in a console and uses Entity Framework."
             ],
             "show": true,
             "category": "csharp"
@@ -76,8 +76,8 @@
             "link": "https://github.com/Aztyu/Retro_Breaker",
             "image": "retrobreaker",
             "desc":[
-                "Retro breaker is a remake to the famous brick breaker 'Arkanoid' with a retro/neon look",
-                "On the technical level, I used the C language with the SDL library for the 2D graphics"
+                "Retro breaker is a remake to the famous brick breaker 'Arkanoid' with a retro/neon look.",
+                "On the technical level, I used the C language with the SDL library for the 2D graphics."
             ],
             "show": true,
             "category": "cpp"}

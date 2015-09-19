@@ -26,11 +26,18 @@
         p{
             display:inline;
         }
+
+        @media only screen and (max-width: 1080px){
+            paper-fab{
+                min-height: 72px;
+                min-width: 72px;
+            }
+        }
     </style>
 
     <template>
         <div class="image">
-            <paper-fab  src={{computePath(image)}} mini="true"></paper-fab>
+            <paper-fab class="self-center" src={{computePath(image)}} mini="true"></paper-fab>
             <p>{{text}}</p>
         </div>
     </template>
