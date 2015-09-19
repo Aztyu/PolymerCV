@@ -92,7 +92,7 @@
                         <img id="english_flag" src="../images/english_flag_off.png" on-click="changeLanguage"></img>
                     </div>
                 </div>
-                <paper-tabs selected="{{selected}}">
+                <paper-tabs selected="{{selectedTab}}">
                     <paper-tab>
                         <div class="paper-title">{{resource.home}}</div>
                     </paper-tab>
@@ -105,10 +105,10 @@
                 </paper-tabs>
             </div>
         </paper-header-panel>
-        <neon-animated-pages class="flex" id="pages" selected="{{selected}}" entry-animation="{{entry}}" exit-animation="{{exit}}">
+        <neon-animated-pages class="flex" id="pages" selected="{{selectedPage}}" entry-animation="{{entry}}" exit-animation="{{exit}}">
             <neon-animatable>
                 <div main>
-                    <cv-home-component language="{{language}}" clickselected="{{selected}}" categories="{{categories}}"></cv-home-component>
+                    <cv-home-component language="{{language}}" clickselected="{{selectedTab}}" categories="{{categories}}"></cv-home-component>
                 </div>
             </neon-animatable>
             <neon-animatable>
@@ -132,11 +132,16 @@
               type: Object,
               notify: true
             },
-            selected:{
+            selectedTab:{
                 type: Number,
                 value: 0,
                 notify: true,
                 observer: 'selectChanged'
+            },
+            selectedPage:{
+                type: Number,
+                value: 0,
+                notify: true,
             },
             languages:{
                 type: Object,
@@ -168,7 +173,9 @@
                     {text: "SEO", category: "seo", show: true}
                 ],
                 notify: true
-            }
+            },
+            entry: String,
+            exit: String
         },
 
         ready: function(){
@@ -176,19 +183,17 @@
         },
 
         selectChanged: function(newValue, oldValue) {
-            if(newValue == 0){                          //Change animation based on previous and next selected, bugs to change
-                this.entry = 'slide-from-right-animation';
-                this.exit = 'slide-left-animation';
-            }else if(newValue == 2){
-                this.entry = 'slide-from-left-animation';
-                this.exit = 'slide-right-animation';
-            }else if(newValue < oldValue){
-                this.entry = 'slide-from-left-animation';
-                this.exit = 'slide-right-animation';
-            }else{
-                this.entry = 'slide-from-right-animation';
-                this.exit = 'slide-left-animation';
+            if(newValue < oldValue){
+                this.set('entry', 'slide-from-left-animation');
+                this.set('exit', 'slide-right-animation');
+            }else if(newValue > oldValue){
+                this.set('entry', 'slide-from-right-animation');
+                this.set('exit', 'slide-left-animation');
+            }else if(newValue == 0){
+                this.set('entry', 'slide-from-right-animation');
+                this.set('exit', 'slide-left-animation');
             }
+            this.set('selectedPage', newValue);
         },
 
         changeLanguage: function(language){
