@@ -19,7 +19,7 @@
             "image": "polymercv",
             "desc":[
                 "Il s'agit de mon site personnel qui a pour but de servir de CV et portfolio tout en me permettant d'expérimenter de nouvelles technologies.",
-                "J'ai utiliser la technologie Polymer de Google, basé sur les web components, afin d'obtenir un site responsive et material design."
+                "J'ai utilisé la technologie Polymer de Google, basée sur les web components, afin d'obtenir un site responsive et material design."
             ],
             "category": "web"
         },
@@ -28,7 +28,7 @@
             "link": "http://codeine10.science/",
             "image": "codeine10",
             "desc":[
-                "Ce site Wordpress a été crée dans le cadre d'un projet SUPINFO sur l'optimisation de site Web.",
+                "Ce site Wordpress a été crée dans le cadre d'un projet SUPINFO sur l'optimisation de site Web pour les moteurs de recherches.",
                 "Le but était de placer le site en bonne position sur les moteurs de recherche grâce à diverses techniques et un bon contenu."
             ],
             "category": "seo"
@@ -38,8 +38,8 @@
           "link": "https://github.com/Aztyu/TodoJava",
           "image": "todolist",
           "desc":[
-              "Ce programme permet de se connecter et de créer des tâches, il est ensuite possible de commenter ces tâches ou de les fermer.",
-              "Le programme a été entièrement réaliser en Java avec Swing pour l'interface et une base de données MySQL pour sauvegarder les données."
+              "Ce programme permet de se connecter et de créer des tâches, il est ensuite possible de commenter ces tâches ou de les terminer.",
+              "Le programme a été entièrement réalisé en Java avec Swing pour l'interface et une base de données MySQL pour sauvegarder les tâches et utilisateurs."
           ],
           "category": "java"
         },
@@ -48,7 +48,7 @@
             "link": "https://github.com/Jitrixis/2NET-Restaurant-Management-Software",
             "image": "restaurant",
             "desc":[
-                "Un logiciel qui permet de gérer un restaurant en ajoutant des repas et serveurs puis de les assigner aux tables.",
+                "Un logiciel qui permet de gérer un restaurant en ajoutant des repas et serveurs puis de les assigner aux différentes tables.",
                 "Le C# a été utilisé pour créer le programme en WPF et LINQ pour gérer la liaison avec la base de donnée."
             ],
             "category": "csharp"
@@ -68,7 +68,7 @@
             "link": "https://github.com/Aztyu/Retro_Breaker",
             "image": "retrobreaker",
             "desc":[
-              "Retro breaker est un remake du célébre jeu de casse-brique avec un look rétro/néon.",
+              "Retro breaker est un remake du célébre jeu de casse-brique 'Arkanoid' avec un look rétro/néon.",
               "Au niveau technique, le C a été utilisé avec la bibliothèque SDL pour l'affichage."
             ],
             "category": "cpp"}

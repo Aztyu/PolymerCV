@@ -5,7 +5,7 @@
       "title": "Situation actuelle",
       "text":[
         "Je m'appelle Corentin BEAL, j'étudie actuellement le dévelopement informatique à SUPINFO Lyon depuis 2 ans. Je suis plus orienté vers le dévelopement web et applicatif mais je posséde quelques bases en gestion de serveur.",
-        "J'aime me tenir informé des nouveaux frameworks et nouveautés concernant les langages existants, afin d'appliquer ces nouveautés je garde toujours un projet en parallèle de mes cours sur lequel je peux m'améliorer sur les technologies de mn choix. Vous pouvez d'ailleurs retrouver tous mes projets, cadre personnel et scolaire sur ma page Github.",
+        "J'aime me tenir informé des derniers frameworks et mises à jour concernant les langages existants. Afin d'appliquer ces nouveautés je garde toujours un projet en parallèle de mes cours sur lequel je peux m'améliorer sur les technologies de mon choix. Vous pouvez d'ailleurs retrouver tous mes projets, cadre personnel et scolaire, sur ma page Github.",
         "Je suis actuellement à la recherche d'un stage à temps partiel pour les jeudis et vendredis pendant la période d'Octobre 2015 à Juin 2016 ainsi qu'un stage à temps plein de Juillet 2016 à Octobre 2016."
       ]
     },
@@ -27,7 +27,7 @@
                     },
                     {
                        "filter": "csharp",
-                       "text": "Langage C/C++, bibliothèque SDL et Irrlicht",
+                       "text": "Langage C# , WPF, LINQ et la plateforme .NET",
                        "image": "csharp_fab"
                     }
                 ]
@@ -135,7 +135,7 @@
                 "date":"En cours",
                 "description": [
                     "J'ai intégré SUPINFO ,une formation informatique générale, en 2013. Je viens d'achever ma deuxième année durant laquelle j'ai consolidé les bases d'algorithmique et de programation acquises au cours de la première année.",
-                    "J'ai pu apprendre à maitriser les bases des langages orientés objets les plus populaires tel que le C++, le Java et le C#. J'ai aussi découvert le milieu de l'administration système sur les plateforme Linux ou Windows Server."
+                    "J'ai pu apprendre à maitriser les bases des langages orientés objets les plus populaires tel que le C++, le Java et le C#. J'ai aussi découvert le milieu de l'administration système sur les plateformes Linux ou Windows Server."
                 ]
             },
             {
@@ -206,29 +206,28 @@
         "hobbie":[
             {
                 "description":[
-                    "Voyages en immersion aux USA (Chicago) pendant 1 mois en mars 2012 ..."
-                ],
-                "image": "chicago"
-            },
-            {
-                "description":[
-                    "et en Allemagne (Munich) pendant 2 semaines en Décembre 2011."
+                    "J'aime voyager et deécouvrir de nouvelles cultures. Je suis allé en Allemagne pendant 3 semaines dans le cadre d'un échange avec un étudiant allemand afin de découvrir son mode de vie notament ses cours. Durant ce voyage j'ai suivi les cours au lycée allemand et visité la ville de Munich et ses environs."
                 ],
                 "image": "munich"
             },
             {
                 "description":[
-                    "Les innovations logicielles : Polymer 1.0, Android L, Windows 10"
+                    "En mars 2012, j'ai pu prendre part à un programme d'échange avec un étudiant américain. J'ai partagé la vie de mon correspondant et de sa famille durant 3 semaines. J'ai ainsi pu découvrir le système scolaire américain et la ville de Chicago."
+                ],
+                "image": "chicago"
+            },
+            {
+                "description":[
+                    " Comme je l'ai dit précédemment dans ma description, j'aime suivre les innovations logicielles mais aussi celles physiques qui les accompagnent. Je m'intéresse particulièrement aux technologies 'wearable' telle qu’Android Wear et les nouvelles possibilités qu’elles apportent."
                 ],
                 "image": "polymer"
             },
             {
                 "description":[
-                    "Les innovations matérielles : IoT (Internet of Things), wearables, SSD"
+                    "Je suis aussi les évolutions dans le domaine de la réalité virtuelles et les nouvelles opportunités qu'elles présentent."
                 ],
                 "image": "wear"
             }
-
         ]
     }
 }
