@@ -198,7 +198,12 @@
 
         changeLanguage: function(language){
             element = language.srcElement;
-            id = element.getAttribute("id");
+            if(element == undefined){        //Workaround for Firefox support
+                element = language.explicitOriginalTarget;
+                id = language.explicitOriginalTarget.attributes["id"].nodeValue;
+            }else{
+                id = element.getAttribute("id");
+            }
             switch(id){                     //based on flag selected change flag source and data, send update to child elements via data bindings
                 case 'french_flag':
                     enabled = this.languages.french.enabled;
@@ -225,6 +230,9 @@
                         element.setAttribute("src", "images/english_flag.png");
                         other.setAttribute("src", "images/french_flag_off.png");
                     }
+                    break;
+                default:
+                    console.log(id);
                     break;
             }
         }

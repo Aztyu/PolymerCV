@@ -154,6 +154,23 @@
     "experience":{
         "title": "Expérience",
         "job":[
+          {
+              "company":"Mu-Test",
+              "src":"http://www.mu-test.com/",
+              "image":"mutest",
+              "localization": {
+                  "longitude":4.3113186,
+                  "latitude":45.3314691
+              },
+              "position":"Développeur/Testeur",
+              "date":"07/07/2015 au 30/10/2015",
+              "description": [
+                  "Mu-Test est une start-up dans le domaine des machines de tests automatisés de composants électroniques.",
+                  "Pendant ce stage je me suis vu assigner la tâche de créer un outils de debug dans l'interface Java existante.",
+                  "Afin de réaliser cet outil j'ai du utiliser à la fois les couches bas niveaux du logiciel Mu-test pour la récupération et l'interface graphique pour me faciliter la création de l'outil.",
+                  "Le but final de cet outil est de permettre aux clients de facilement voir les valeurs enregistrées au sein des testeurs pour leur facilité la création/correction de programme de test."
+              ]
+          },
             {
                 "company":"Mu-Test",
                 "src":"http://www.mu-test.com/",
@@ -166,7 +183,7 @@
                 "date":"01/07/2014 au 31/10/2014",
                 "description": [
                     "Mu-Test est une start-up dans le domaine des machines de tests automatisés de composants électroniques.",
-                    "Durant ce stage j'ai eu l'occasion de découvrir le métier de développeur au sein d'une start-up qui utilise la méthode AGILE. Au niveau technique j'ai travaillé en Java avec la bibliothèque Swing ainsi que le C++",
+                    "Durant ce stage j'ai eu l'occasion de découvrir le métier de développeur au sein d'une start-up qui utilise la méthode AGILE. Au niveau technique j'ai travaillé en Java avec la bibliothèque Swing ainsi que le C++.",
                     "J'ai pu développer plusieurs améliorations et ajouts à l'interface graphique en Java ainsi qu'à la partie C++ qui communique directement avec les testeurs.",
                     "J'ai aussi pu découvrir et mieux comprendre la fonction de testeur en effectuant des campagnes de test fonctionnel via Testlink sur les releases du logiciel Mu-Test et du report de bugs via Redmine."
                 ]
@@ -182,7 +199,8 @@
                 "position":"Conditionneur",
                 "date":"01/08/2013 au 31/10/2013",
                 "description": [
-                    "Surveillance et relève sur des machines de production de rubans textiles."
+                    "J'ai travaillé chez Oriol & Fontanel, un producteur de ruban, dans le cadre d'un job d'été en dehors de mon domaine.",
+                    "Ma mission était de surveiller plusieurs métiers et d'en relever la production."
                 ]
             },
             {
@@ -206,7 +224,7 @@
         "hobbie":[
             {
                 "description":[
-                    "J'aime voyager et deécouvrir de nouvelles cultures. Je suis allé en Allemagne pendant 3 semaines dans le cadre d'un échange avec un étudiant allemand afin de découvrir son mode de vie notament ses cours. Durant ce voyage j'ai suivi les cours au lycée allemand et visité la ville de Munich et ses environs."
+                    "J'aime voyager et découvrir de nouvelles cultures. Je suis allé en Allemagne pendant 3 semaines dans le cadre d'un échange avec un étudiant allemand afin de découvrir son mode de vie notament ses cours. Durant ce voyage j'ai suivi les cours au lycée allemand et visité la ville de Munich et ses environs."
                 ],
                 "image": "munich"
             },
