@@ -1,0 +1,96 @@
+<link rel="import" href="../bower_components/polymer/polymer.html">
+<link rel="import" href="../bower_components/iron-flex-layout/classes/iron-flex-layout.html">
+<link rel="import" href="../custom_components/cvProjectcomponent.html">
+<link rel="import" href="../bower_components/paper-checkbox/paper-checkbox.html">
+
+<dom-module id="cv-documents-component">
+    <style>
+        .wrapper{
+        @apply(--layout-wrap);
+            @apply(--layout-horizontal);
+            width: 90%;
+            margin: auto;
+        }
+
+        .boxes{
+            @apply(--layout-wrap);
+            @apply(--layout-horizontal);
+            color: white;
+            margin: 0 0 0 0;
+            padding: 8px 16px 8px 16px;
+            background-color: #1E88E5;
+        }
+
+        .blue{
+            margin: 0 0 0 0;
+            padding: 4px 8px 4px 8px;
+            color: white;
+            background-color: #1E88E5;
+        }
+
+        paper-checkbox{
+            margin: 8px 8px 8px 8px;
+            --paper-checkbox-label-color: white;
+        }
+
+        cv-project-component{
+            min-width: 550px;
+            margin-top: 16px;
+            margin-bottom: 16px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+
+    <template>
+      <iron-ajax
+              id="documentrequest"
+              url="{{ajaxurl}}"
+              handle-as="json"
+              last-response="{{resource}}"></iron-ajax>
+
+        <p>Test</p>
+        <p>{{resource.message}}</p>
+    </template>
+</dom-module>
+
+<script>
+
+
+    Polymer({
+        is: "cv-documents-component",
+
+        properties: {
+            resource:{
+              type: Object,
+              notify: true
+            },
+            categories:{
+                type: Array,
+            },
+            language:{
+              type: String,
+              notify: true,
+              observer: "languageChanged"
+            },
+            ajaxurl:{
+                type: String,
+                value: "json/fr/home.json"
+            }
+        },
+
+        ready: function(){
+            this.$.documentrequest.generateRequest();
+        },
+
+        languageChanged: function(){
+            if(this.language === "english"){    //Check whichi language to use in ajax loading
+                this.set('ajaxurl', "json/en/document.json");
+                this.$.documentrequest.generateRequest();
+            }else if(this.language === "french"){
+                this.set('ajaxurl', "json/fr/document.json");
+                this.$.documentrequest.generateRequest();
+            }
+        }
+    })
+</script>
