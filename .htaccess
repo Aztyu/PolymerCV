@@ -1,8 +1,9 @@
+
 ErrorDocument 404 http://corentinbeal.fr/404.html
 
 ErrorDocument 403 http://corentinbeal.fr/404.html
 
-RewriteCond %{HTTP_HOST} ^www\.corentinbeal\.fr$
+RewriteCond %{HTTP_HOST} ^(.*)corentinbeal\.fr$
 RewriteRule ^/?$ "http\:\/\/corentinbeal\.fr\/" [R=301,L]
 
 Redirect 301 http://corentinbeal.fr http://corentinbeal.fr/index.html
