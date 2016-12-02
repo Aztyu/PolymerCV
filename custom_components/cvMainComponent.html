@@ -100,9 +100,6 @@
                     <paper-tab>
                         <div class="paper-title">{{resource.project}}</div>
                     </paper-tab>
-                    <paper-tab>
-                        <div class="paper-title">{{resource.document}}</div>
-                    </paper-tab>
                 </paper-tabs>
             </div>
         </paper-header-panel>
@@ -184,7 +181,7 @@
         },
 
         selectChanged: function(newValue, oldValue) {
-            if(newValue < oldValue){
+            /*if(newValue < oldValue){
                 this.set('entry', 'slide-from-left-animation');
                 this.set('exit', 'slide-right-animation');
             }else if(newValue > oldValue){
@@ -193,7 +190,7 @@
             }else if(newValue == 0){
                 this.set('entry', 'slide-from-right-animation');
                 this.set('exit', 'slide-left-animation');
-            }
+            }*/
             this.set('selectedPage', newValue);
         },
 
