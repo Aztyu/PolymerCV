@@ -4,9 +4,9 @@
   "situation": {
       "title": "Situation actuelle",
       "text":[
-        "Je m'appelle Corentin BEAL, j'étudie actuellement le dévelopement informatique à SUPINFO Lyon depuis 2 ans. Je suis plus orienté vers le dévelopement web et applicatif mais je posséde quelques bases en gestion de serveur.",
-        "J'aime me tenir informé des derniers frameworks et mises à jour concernant les langages existants. Afin d'appliquer ces nouveautés je garde toujours un projet en parallèle de mes cours sur lequel je peux m'améliorer sur les technologies de mon choix. Vous pouvez d'ailleurs retrouver tous mes projets, cadre personnel et scolaire, sur ma page Github.",
-        "Je suis actuellement à la recherche d'un stage à temps partiel pour les jeudis et vendredis pendant la période d'Octobre 2015 à Juin 2016 ainsi qu'un stage à temps plein de Juillet 2016 à Octobre 2016."
+        "Je m'appelle Corentin BEAL, je suis actuellement en 3ème année à SUPINFO où j'étudie actuellement le dévelopement dans plusieurs langages ainsi que de la gestion de serveurs. Je suis plus orienté vers le dévelopement applicatif et web.",
+        "Je suis actuellement à la recherche d' un stage à temps plein de Juillet 2016 à Octobre 2016  et d'un stage à temps partiel ou d'un contrat en alternance pour les lundis et mardis pendant la période d'Octobre 2016 à Juin 2017.",
+        "Afin de vous faire une idée de mon travail vous pouvez retrouver la plupart de mes projets, cadre personnel et scolaire, sur ma page Github.."
       ]
     },
     "skill":{
@@ -49,6 +49,11 @@
                        "filter": "web",
                        "text": "Javascript",
                        "image": "js_fab"
+                    },
+                    {
+                       "filter": "web",
+                       "text": "Java EE, framework Spring",
+                       "image": "jee_fab"
                     },
                     {
                        "filter": "web",
@@ -134,8 +139,8 @@
                 "cursus": "Licence Informatique",
                 "date":"En cours",
                 "description": [
-                    "J'ai intégré SUPINFO ,une formation informatique générale, en 2013. Je viens d'achever ma deuxième année durant laquelle j'ai consolidé les bases d'algorithmique et de programation acquises au cours de la première année.",
-                    "J'ai pu apprendre à maitriser les bases des langages orientés objets les plus populaires tel que le C++, le Java et le C#. J'ai aussi découvert le milieu de l'administration système sur les plateformes Linux ou Windows Server."
+                    "J'ai intégré SUPINFO, une formation informatique générale, en 2013. Je suis actuellement en 3ème année durant laquelle j'apprends le développement côté serveur avec Java Enterprise Edition et ASP.Net MVC.",
+                    "Au cours des années preceentes j'ai pu apprendre à maitriser les bases des langages orientés objets les plus populaires tel que le C++, le Java et le C#. J'ai aussi découvert le milieu de l'administration système sur les plateforme Linux ou Windows Server."
                 ]
             },
             {
@@ -154,6 +159,22 @@
     "experience":{
         "title": "Expérience",
         "job":[
+          {
+              "company":"Winciel",
+              "src":"http://winciel.fr/",
+              "image":"winciel",
+              "localization": {
+                  "longitude":4.844864,
+                  "latitude":45.769011
+              },
+              "position":"Développeur",
+              "date":"05/11/15 au 31/06/16",
+              "description": [
+                  "Winciel est un éditeur de logiciel lyonnais. Son produit principal est InfoPro, un logiciel ERP qui facilite la gestion des clients, la prospections et la comptabilité entre autre.",
+                  "Ma mission durant ce stage à temps partiel est de développer des outils en ligne venant en complément du logiciel existant.",
+                  "J'ai par exemple pu participer à la création d'une plateforme internet en Java EE (Framework Spring) qui permet d'accéder aux fichiers et informations d'InfoPro directement en ligne."
+              ]
+          },
           {
               "company":"Mu-Test",
               "src":"http://www.mu-test.com/",
