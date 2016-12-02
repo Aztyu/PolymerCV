@@ -1,0 +1,23 @@
+{
+  "name": "polymer_cv",
+  "version": "1.0.0",
+  "description": "Un simple CV réalisé grâce à la technologie Polymer 1.0",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp": "^3.9.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Aztyu/PolymerCV.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Aztyu/PolymerCV/issues"
+  },
+  "homepage": "https://github.com/Aztyu/PolymerCV#readme"
+}
