@@ -8,7 +8,14 @@ var dist_path = 'dist/'
 gulp.task('vulcanize', ['clean'], function() {
   return gulp.src('custom_components/cvMainComponent.html')
     .pipe(vulcanize({
-      stripComments: true
+      excludes: [
+            'bower_components/polymer/polymer.html'
+        ],
+        stripExcludes: false,
+        inlineScripts: true,
+        inlineCss: true,
+        implicitStrip: true,
+        stripComments: true
     }))
     .pipe(gulp.dest(dist_path + 'custom_components/'));
 });
@@ -28,6 +35,10 @@ gulp.task('copy', ['vulcanize'], function () {
         .pipe(gulp.dest(dist_path));
     gulp.src('json/**/*.json')
         .pipe(gulp.dest(dist_path + 'json/'));
+    gulp.src('bower_components/**/*')
+        .pipe(gulp.dest(dist_path + 'bower_components/'));
+    gulp.src('custom_behaviors/*.html')
+        .pipe(gulp.dest(dist_path + 'custom_behaviors/'));
 });
 
 gulp.task('clean', function() {
