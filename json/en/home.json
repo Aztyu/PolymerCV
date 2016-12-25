@@ -163,8 +163,8 @@
                 "src":"http://www.mu-test.com/",
                 "image":"mutest",
                 "localization": {
-                    "longitude":4.3113186,
-                    "latitude":45.3314691
+                    "longitude":4.311318,
+                    "latitude":45.331469
                 },
                 "position":"Software Developer/Tester",
                 "date":"07/01/2014 to 10/31/2014",
@@ -193,7 +193,7 @@
                 "src":"http://www.grangergroup.fr/",
                 "image":"granger",
                 "localization": {
-                    "longitude":4.2501715,
+                    "longitude":4.250171,
                     "latitude":45.252693
                 },
                 "position":"Packer",
